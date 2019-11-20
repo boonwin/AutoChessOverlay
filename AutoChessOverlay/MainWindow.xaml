@@ -43,6 +43,12 @@
         <Label x:Name="lbRank8" Content="0" HorizontalAlignment="Left" Margin="136,291,0,0" VerticalAlignment="Top" Height="25" Width="59" HorizontalContentAlignment="Center" FontSize="10"/>
         <Image HorizontalAlignment="Left" Height="25" Margin="35,72,0,0" VerticalAlignment="Top" Width="35" Source="Icon/ranks.png"/>
         <Image HorizontalAlignment="Left" Height="25" Margin="35,109,0,0" VerticalAlignment="Top" Width="35" Source="Icon/2nd.png"/>
+        <Image HorizontalAlignment="Left" Height="25" Margin="35,140,0,0" VerticalAlignment="Top" Width="35" Source="Icon/3rd.png"/>
+        <Image HorizontalAlignment="Left" Height="25" Margin="35,171,0,0" VerticalAlignment="Top" Width="35" Source="Icon/4th.png"/>
+        <Image HorizontalAlignment="Left" Height="25" Margin="35,202,0,0" VerticalAlignment="Top" Width="35" Source="Icon/5th.png"/>
+        <Image HorizontalAlignment="Left" Height="25" Margin="35,234,0,0" VerticalAlignment="Top" Width="35" Source="Icon/6th.png"/>
+        <Image HorizontalAlignment="Left" Height="25" Margin="35,265,0,0" VerticalAlignment="Top" Width="35" Source="Icon/7th.png"/>
+        <Image HorizontalAlignment="Left" Height="25" Margin="35,296,0,0" VerticalAlignment="Top" Width="35" Source="Icon/8th.png"/>
 
 
 
