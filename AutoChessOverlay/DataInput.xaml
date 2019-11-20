@@ -1,0 +1,47 @@
+﻿<Window x:Name="DataInputWindow" x:Class="AutoChessOverlay.DataInput"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoChessOverlay"
+        mc:Ignorable="d"
+        Title="DataInput" Height="450" Width="256.602">
+    <Grid Margin="0,0,2,0">
+
+
+        <Button x:Name="btnEnterData" Content="update" HorizontalAlignment="Left" Margin="88,367,0,0" VerticalAlignment="Top" Width="141" Height="28" Click="btnEnterData_Click"/>
+
+        <TextBox x:Name="tbRank1Amount" HorizontalAlignment="Left" Height="32" Margin="88,42,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" TextAlignment="Left" Width="100" FontSize="16" Background="LightGray" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnr1plus1" Content="+1" HorizontalAlignment="Left" Margin="193,42,0,0" VerticalAlignment="Top" Width="36" Height="31" Click="btnr1plus1_Click" MouseRightButtonUp="btnr1plus1_MouseRightButtonUp"/>
+        <Label Content="1st" HorizontalAlignment="Left" Margin="33,39,0,0" VerticalAlignment="Top" FontSize="18"/>
+
+        <TextBox x:Name="tbRank2Amount" HorizontalAlignment="Left" Height="32" Margin="88,80,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" TextAlignment="Left" Width="100" FontSize="16" Background="LightGray" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnr2plus1" Content="+1" HorizontalAlignment="Left" Margin="193,81,0,0" VerticalAlignment="Top" Width="36" Height="31" MouseRightButtonUp="btnr2plus1_MouseRightButtonUp" Click="btnr2plus1_Click"/>
+        <Label Content="2nd" HorizontalAlignment="Left" Margin="33,79,0,0" VerticalAlignment="Top" FontSize="18"/>
+
+        <TextBox x:Name="tbRank3Amount" HorizontalAlignment="Left" Height="32" Margin="88,120,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" TextAlignment="Left" Width="100" FontSize="16" Background="LightGray" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnr3plus1" Content="+1" HorizontalAlignment="Left" Margin="193,121,0,0" VerticalAlignment="Top" Width="36" Height="31" Click="btnr3plus1_Click" MouseRightButtonUp="btnr3plus1_MouseRightButtonUp"/>
+        <Label Content="3rd" HorizontalAlignment="Left" Margin="33,118,0,0" VerticalAlignment="Top" FontSize="18"/>
+
+        <TextBox x:Name="tbRank4Amount" HorizontalAlignment="Left" Height="32" Margin="88,158,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" TextAlignment="Left" Width="100" FontSize="16" Background="LightGray" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnr4plus1" Content="+1" HorizontalAlignment="Left" Margin="193,160,0,0" VerticalAlignment="Top" Width="36" Height="31" Click="btnr4plus1_Click" MouseRightButtonUp="btnr4plus1_MouseRightButtonUp"/>
+        <Label Content="4th" HorizontalAlignment="Left" Margin="33,157,0,0" VerticalAlignment="Top" FontSize="18"/>
+
+        <TextBox x:Name="tbRank5Amount" HorizontalAlignment="Left" Height="32" Margin="88,197,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" TextAlignment="Left" Width="100" FontSize="16" Background="LightGray" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnr5plus1" Content="+1" HorizontalAlignment="Left" Margin="193,198,0,0" VerticalAlignment="Top" Width="36" Height="31" Click="btnr5plus1_Click" MouseRightButtonDown="btnr5plus1_MouseRightButtonUp"/>
+        <Label Content="5th" HorizontalAlignment="Left" Margin="33,196,0,0" VerticalAlignment="Top" FontSize="18"/>
+
+        <TextBox x:Name="tbRank6Amount" HorizontalAlignment="Left" Height="32" Margin="88,237,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" TextAlignment="Left" Width="100" FontSize="16" Background="LightGray" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnr6plus1" Content="+1" HorizontalAlignment="Left" Margin="193,238,0,0" VerticalAlignment="Top" Width="36" Height="31" Click="btnr6plus1_Click" MouseRightButtonUp="btnr6plus1_MouseRightButtonUp"/>
+        <Label Content="6th" HorizontalAlignment="Left" Margin="33,235,0,0" VerticalAlignment="Top" FontSize="18"/>
+
+        <TextBox x:Name="tbRank7Amount" HorizontalAlignment="Left" Height="32" Margin="88,276,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" TextAlignment="Left" Width="100" FontSize="16" Background="LightGray" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnr7plus1" Content="+1" HorizontalAlignment="Left" Margin="193,277,0,0" VerticalAlignment="Top" Width="36" Height="31" Click="btnr7plus1_Click" MouseRightButtonUp="btnr7plus1_MouseRightButtonUp"/>
+        <Label Content="7th" HorizontalAlignment="Left" Margin="33,274,0,0" VerticalAlignment="Top" FontSize="18"/>
+
+        <TextBox x:Name="tbRank8Amount" HorizontalAlignment="Left" Height="32" Margin="88,315,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" TextAlignment="Left" Width="100" FontSize="16" Background="LightGray" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnr8plus1" Content="+1" HorizontalAlignment="Left" Margin="193,316,0,0" VerticalAlignment="Top" Width="36" Height="31" Click="btnr8plus1_Click" MouseRightButtonUp="btnr8plus1_MouseRightButtonUp"/>
+        <Label Content="8th" HorizontalAlignment="Left" Margin="33,313,0,0" VerticalAlignment="Top" FontSize="18"/>
+
+    </Grid>
+</Window>
