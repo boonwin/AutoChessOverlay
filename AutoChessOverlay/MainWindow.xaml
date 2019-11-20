@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:AutoChessOverlay"
         mc:Ignorable="d"
         Title="MainWindow" Height="323" Width="300" ResizeMode="NoResize">
-    <Grid Background="HotPink">
+    <Grid Background="Magenta">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="33*"/>
             <ColumnDefinition Width="16*"/>
