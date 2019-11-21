@@ -25,12 +25,14 @@ namespace AutoChessOverlay
         {
             _mainWindow = mainWindow;
             InitializeComponent();
+            cbGame.Items.Add("Battlegrounds");
+            cbGame.Items.Add("Underlords");
         }
 
    
         List<Ranks> ranks = new List<Ranks>();
-     
 
+    
         private void btnEnterData_Click(object sender, RoutedEventArgs e)
         {
             var rank = new Ranks();
@@ -64,6 +66,19 @@ namespace AutoChessOverlay
         private void btnr1plus1_Click(object sender, RoutedEventArgs e)
         {
             tbRank1Amount.Text = (Int32.Parse(tbRank1Amount.Text) + 1).ToString();
+            var rank = new Ranks();
+            rank.rank1 = Int32.Parse(tbRank1Amount.Text);
+            rank.rank2 = Int32.Parse(tbRank2Amount.Text);
+            rank.rank3 = Int32.Parse(tbRank3Amount.Text);
+            rank.rank4 = Int32.Parse(tbRank4Amount.Text);
+            rank.rank5 = Int32.Parse(tbRank5Amount.Text);
+            rank.rank6 = Int32.Parse(tbRank6Amount.Text);
+            rank.rank7 = Int32.Parse(tbRank7Amount.Text);
+            rank.rank8 = Int32.Parse(tbRank8Amount.Text);
+
+            ranks.Add(rank);
+
+            _mainWindow.SetTextBoxValue(rank);
         }
 
         private void btnr1plus1_MouseRightButtonUp(object sender, MouseButtonEventArgs e)
@@ -71,6 +86,19 @@ namespace AutoChessOverlay
             if (Int32.Parse(tbRank1Amount.Text) != 0) { 
             
             tbRank1Amount.Text = (Int32.Parse(tbRank1Amount.Text) - 1).ToString();
+                var rank = new Ranks();
+                rank.rank1 = Int32.Parse(tbRank1Amount.Text);
+                rank.rank2 = Int32.Parse(tbRank2Amount.Text);
+                rank.rank3 = Int32.Parse(tbRank3Amount.Text);
+                rank.rank4 = Int32.Parse(tbRank4Amount.Text);
+                rank.rank5 = Int32.Parse(tbRank5Amount.Text);
+                rank.rank6 = Int32.Parse(tbRank6Amount.Text);
+                rank.rank7 = Int32.Parse(tbRank7Amount.Text);
+                rank.rank8 = Int32.Parse(tbRank8Amount.Text);
+
+                ranks.Add(rank);
+
+                _mainWindow.SetTextBoxValue(rank);
             }
         }
 
@@ -80,42 +108,146 @@ namespace AutoChessOverlay
             {
 
                 tbRank2Amount.Text = (Int32.Parse(tbRank2Amount.Text) - 1).ToString();
+                var rank = new Ranks();
+                rank.rank1 = Int32.Parse(tbRank1Amount.Text);
+                rank.rank2 = Int32.Parse(tbRank2Amount.Text);
+                rank.rank3 = Int32.Parse(tbRank3Amount.Text);
+                rank.rank4 = Int32.Parse(tbRank4Amount.Text);
+                rank.rank5 = Int32.Parse(tbRank5Amount.Text);
+                rank.rank6 = Int32.Parse(tbRank6Amount.Text);
+                rank.rank7 = Int32.Parse(tbRank7Amount.Text);
+                rank.rank8 = Int32.Parse(tbRank8Amount.Text);
+
+                ranks.Add(rank);
+
+                _mainWindow.SetTextBoxValue(rank);
             }
         }
 
         private void btnr2plus1_Click(object sender, RoutedEventArgs e)
         {
             tbRank2Amount.Text = (Int32.Parse(tbRank2Amount.Text) + 1).ToString();
+            var rank = new Ranks();
+            rank.rank1 = Int32.Parse(tbRank1Amount.Text);
+            rank.rank2 = Int32.Parse(tbRank2Amount.Text);
+            rank.rank3 = Int32.Parse(tbRank3Amount.Text);
+            rank.rank4 = Int32.Parse(tbRank4Amount.Text);
+            rank.rank5 = Int32.Parse(tbRank5Amount.Text);
+            rank.rank6 = Int32.Parse(tbRank6Amount.Text);
+            rank.rank7 = Int32.Parse(tbRank7Amount.Text);
+            rank.rank8 = Int32.Parse(tbRank8Amount.Text);
+
+            ranks.Add(rank);
+
+            _mainWindow.SetTextBoxValue(rank);
         }
 
         private void btnr3plus1_Click(object sender, RoutedEventArgs e)
         {
             tbRank3Amount.Text = (Int32.Parse(tbRank3Amount.Text) + 1).ToString();
+            var rank = new Ranks();
+            rank.rank1 = Int32.Parse(tbRank1Amount.Text);
+            rank.rank2 = Int32.Parse(tbRank2Amount.Text);
+            rank.rank3 = Int32.Parse(tbRank3Amount.Text);
+            rank.rank4 = Int32.Parse(tbRank4Amount.Text);
+            rank.rank5 = Int32.Parse(tbRank5Amount.Text);
+            rank.rank6 = Int32.Parse(tbRank6Amount.Text);
+            rank.rank7 = Int32.Parse(tbRank7Amount.Text);
+            rank.rank8 = Int32.Parse(tbRank8Amount.Text);
+
+            ranks.Add(rank);
+
+            _mainWindow.SetTextBoxValue(rank);
         }
 
         private void btnr4plus1_Click(object sender, RoutedEventArgs e)
         {
             tbRank4Amount.Text = (Int32.Parse(tbRank4Amount.Text) + 1).ToString();
+            var rank = new Ranks();
+            rank.rank1 = Int32.Parse(tbRank1Amount.Text);
+            rank.rank2 = Int32.Parse(tbRank2Amount.Text);
+            rank.rank3 = Int32.Parse(tbRank3Amount.Text);
+            rank.rank4 = Int32.Parse(tbRank4Amount.Text);
+            rank.rank5 = Int32.Parse(tbRank5Amount.Text);
+            rank.rank6 = Int32.Parse(tbRank6Amount.Text);
+            rank.rank7 = Int32.Parse(tbRank7Amount.Text);
+            rank.rank8 = Int32.Parse(tbRank8Amount.Text);
+
+            ranks.Add(rank);
+
+            _mainWindow.SetTextBoxValue(rank);
         }
 
         private void btnr5plus1_Click(object sender, RoutedEventArgs e)
         {
             tbRank5Amount.Text = (Int32.Parse(tbRank5Amount.Text) + 1).ToString();
+            var rank = new Ranks();
+            rank.rank1 = Int32.Parse(tbRank1Amount.Text);
+            rank.rank2 = Int32.Parse(tbRank2Amount.Text);
+            rank.rank3 = Int32.Parse(tbRank3Amount.Text);
+            rank.rank4 = Int32.Parse(tbRank4Amount.Text);
+            rank.rank5 = Int32.Parse(tbRank5Amount.Text);
+            rank.rank6 = Int32.Parse(tbRank6Amount.Text);
+            rank.rank7 = Int32.Parse(tbRank7Amount.Text);
+            rank.rank8 = Int32.Parse(tbRank8Amount.Text);
+
+            ranks.Add(rank);
+
+            _mainWindow.SetTextBoxValue(rank);
         }
 
         private void btnr6plus1_Click(object sender, RoutedEventArgs e)
         {
             tbRank6Amount.Text = (Int32.Parse(tbRank6Amount.Text) + 1).ToString();
+            var rank = new Ranks();
+            rank.rank1 = Int32.Parse(tbRank1Amount.Text);
+            rank.rank2 = Int32.Parse(tbRank2Amount.Text);
+            rank.rank3 = Int32.Parse(tbRank3Amount.Text);
+            rank.rank4 = Int32.Parse(tbRank4Amount.Text);
+            rank.rank5 = Int32.Parse(tbRank5Amount.Text);
+            rank.rank6 = Int32.Parse(tbRank6Amount.Text);
+            rank.rank7 = Int32.Parse(tbRank7Amount.Text);
+            rank.rank8 = Int32.Parse(tbRank8Amount.Text);
+
+            ranks.Add(rank);
+
+            _mainWindow.SetTextBoxValue(rank);
         }
 
         private void btnr7plus1_Click(object sender, RoutedEventArgs e)
         {
             tbRank7Amount.Text = (Int32.Parse(tbRank7Amount.Text) + 1).ToString();
+            var rank = new Ranks();
+            rank.rank1 = Int32.Parse(tbRank1Amount.Text);
+            rank.rank2 = Int32.Parse(tbRank2Amount.Text);
+            rank.rank3 = Int32.Parse(tbRank3Amount.Text);
+            rank.rank4 = Int32.Parse(tbRank4Amount.Text);
+            rank.rank5 = Int32.Parse(tbRank5Amount.Text);
+            rank.rank6 = Int32.Parse(tbRank6Amount.Text);
+            rank.rank7 = Int32.Parse(tbRank7Amount.Text);
+            rank.rank8 = Int32.Parse(tbRank8Amount.Text);
+
+            ranks.Add(rank);
+
+            _mainWindow.SetTextBoxValue(rank);
         }
 
         private void btnr8plus1_Click(object sender, RoutedEventArgs e)
         {
             tbRank8Amount.Text = (Int32.Parse(tbRank8Amount.Text) + 1).ToString();
+            var rank = new Ranks();
+            rank.rank1 = Int32.Parse(tbRank1Amount.Text);
+            rank.rank2 = Int32.Parse(tbRank2Amount.Text);
+            rank.rank3 = Int32.Parse(tbRank3Amount.Text);
+            rank.rank4 = Int32.Parse(tbRank4Amount.Text);
+            rank.rank5 = Int32.Parse(tbRank5Amount.Text);
+            rank.rank6 = Int32.Parse(tbRank6Amount.Text);
+            rank.rank7 = Int32.Parse(tbRank7Amount.Text);
+            rank.rank8 = Int32.Parse(tbRank8Amount.Text);
+
+            ranks.Add(rank);
+
+            _mainWindow.SetTextBoxValue(rank);
         }
 
         private void btnr8plus1_MouseRightButtonUp(object sender, MouseButtonEventArgs e)
@@ -124,6 +256,19 @@ namespace AutoChessOverlay
             {
 
                 tbRank8Amount.Text = (Int32.Parse(tbRank8Amount.Text) - 1).ToString();
+                var rank = new Ranks();
+                rank.rank1 = Int32.Parse(tbRank1Amount.Text);
+                rank.rank2 = Int32.Parse(tbRank2Amount.Text);
+                rank.rank3 = Int32.Parse(tbRank3Amount.Text);
+                rank.rank4 = Int32.Parse(tbRank4Amount.Text);
+                rank.rank5 = Int32.Parse(tbRank5Amount.Text);
+                rank.rank6 = Int32.Parse(tbRank6Amount.Text);
+                rank.rank7 = Int32.Parse(tbRank7Amount.Text);
+                rank.rank8 = Int32.Parse(tbRank8Amount.Text);
+
+                ranks.Add(rank);
+
+                _mainWindow.SetTextBoxValue(rank);
             }
         }
 
@@ -133,6 +278,19 @@ namespace AutoChessOverlay
             {
 
                 tbRank7Amount.Text = (Int32.Parse(tbRank7Amount.Text) - 1).ToString();
+                var rank = new Ranks();
+                rank.rank1 = Int32.Parse(tbRank1Amount.Text);
+                rank.rank2 = Int32.Parse(tbRank2Amount.Text);
+                rank.rank3 = Int32.Parse(tbRank3Amount.Text);
+                rank.rank4 = Int32.Parse(tbRank4Amount.Text);
+                rank.rank5 = Int32.Parse(tbRank5Amount.Text);
+                rank.rank6 = Int32.Parse(tbRank6Amount.Text);
+                rank.rank7 = Int32.Parse(tbRank7Amount.Text);
+                rank.rank8 = Int32.Parse(tbRank8Amount.Text);
+
+                ranks.Add(rank);
+
+                _mainWindow.SetTextBoxValue(rank);
             }
         }
 
@@ -142,6 +300,19 @@ namespace AutoChessOverlay
             {
 
                 tbRank6Amount.Text = (Int32.Parse(tbRank6Amount.Text) - 1).ToString();
+                var rank = new Ranks();
+                rank.rank1 = Int32.Parse(tbRank1Amount.Text);
+                rank.rank2 = Int32.Parse(tbRank2Amount.Text);
+                rank.rank3 = Int32.Parse(tbRank3Amount.Text);
+                rank.rank4 = Int32.Parse(tbRank4Amount.Text);
+                rank.rank5 = Int32.Parse(tbRank5Amount.Text);
+                rank.rank6 = Int32.Parse(tbRank6Amount.Text);
+                rank.rank7 = Int32.Parse(tbRank7Amount.Text);
+                rank.rank8 = Int32.Parse(tbRank8Amount.Text);
+
+                ranks.Add(rank);
+
+                _mainWindow.SetTextBoxValue(rank);
             }
         }
 
@@ -151,6 +322,19 @@ namespace AutoChessOverlay
             {
 
                 tbRank5Amount.Text = (Int32.Parse(tbRank5Amount.Text) - 1).ToString();
+                var rank = new Ranks();
+                rank.rank1 = Int32.Parse(tbRank1Amount.Text);
+                rank.rank2 = Int32.Parse(tbRank2Amount.Text);
+                rank.rank3 = Int32.Parse(tbRank3Amount.Text);
+                rank.rank4 = Int32.Parse(tbRank4Amount.Text);
+                rank.rank5 = Int32.Parse(tbRank5Amount.Text);
+                rank.rank6 = Int32.Parse(tbRank6Amount.Text);
+                rank.rank7 = Int32.Parse(tbRank7Amount.Text);
+                rank.rank8 = Int32.Parse(tbRank8Amount.Text);
+
+                ranks.Add(rank);
+
+                _mainWindow.SetTextBoxValue(rank);
             }
         }
 
@@ -160,6 +344,19 @@ namespace AutoChessOverlay
             {
 
                 tbRank4Amount.Text = (Int32.Parse(tbRank4Amount.Text) - 1).ToString();
+                var rank = new Ranks();
+                rank.rank1 = Int32.Parse(tbRank1Amount.Text);
+                rank.rank2 = Int32.Parse(tbRank2Amount.Text);
+                rank.rank3 = Int32.Parse(tbRank3Amount.Text);
+                rank.rank4 = Int32.Parse(tbRank4Amount.Text);
+                rank.rank5 = Int32.Parse(tbRank5Amount.Text);
+                rank.rank6 = Int32.Parse(tbRank6Amount.Text);
+                rank.rank7 = Int32.Parse(tbRank7Amount.Text);
+                rank.rank8 = Int32.Parse(tbRank8Amount.Text);
+
+                ranks.Add(rank);
+
+                _mainWindow.SetTextBoxValue(rank);
             }
         }
 
@@ -169,6 +366,19 @@ namespace AutoChessOverlay
             {
 
                 tbRank3Amount.Text = (Int32.Parse(tbRank3Amount.Text) - 1).ToString();
+                var rank = new Ranks();
+                rank.rank1 = Int32.Parse(tbRank1Amount.Text);
+                rank.rank2 = Int32.Parse(tbRank2Amount.Text);
+                rank.rank3 = Int32.Parse(tbRank3Amount.Text);
+                rank.rank4 = Int32.Parse(tbRank4Amount.Text);
+                rank.rank5 = Int32.Parse(tbRank5Amount.Text);
+                rank.rank6 = Int32.Parse(tbRank6Amount.Text);
+                rank.rank7 = Int32.Parse(tbRank7Amount.Text);
+                rank.rank8 = Int32.Parse(tbRank8Amount.Text);
+
+                ranks.Add(rank);
+
+                _mainWindow.SetTextBoxValue(rank);
             }
         }
 

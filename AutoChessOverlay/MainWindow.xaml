@@ -11,7 +11,7 @@
             <ColumnDefinition Width="33*"/>
             <ColumnDefinition Width="16*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="btRankTitle" Content="Placements of the day" HorizontalAlignment="Left" Margin="1,-1,0,249" Width="284" FontSize="22" FontFamily="Eras ITC" FontWeight="Bold" Foreground="DarkOrange" Background="Transparent" BorderBrush="Transparent" Click="btRankTitle_Click" Grid.ColumnSpan="2"/>
+        <Button x:Name="btRankTitle" Content="Placements of the day" HorizontalAlignment="Left" Margin="1,-1,0,249" Width="284" FontSize="22" FontFamily="Eras ITC" FontWeight="Bold" Foreground="Yellow" Background="Transparent" BorderBrush="Transparent" Click="btRankTitle_Click" Grid.ColumnSpan="2"/>
 
         <ProgressBar x:Name="pbRank1" HorizontalAlignment="Left" Height="26" Margin="64,36,0,0" VerticalAlignment="Top" Width="202" Minimum="0" Maximum="100" Foreground="Lime" Grid.ColumnSpan="2"/>
         <ProgressBar x:Name="pbRank2" HorizontalAlignment="Left" Height="27" Margin="64,67,0,0" VerticalAlignment="Top" Width="202" Minimum="0" Maximum="100" Foreground="LawnGreen" Grid.ColumnSpan="2"/>
