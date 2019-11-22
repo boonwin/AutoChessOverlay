@@ -59,6 +59,7 @@ namespace AutoChessOverlay
             int[] numbers = new int[] { rank.rank1, rank.rank2, rank.rank3, rank.rank4, rank.rank5, rank.rank6, rank.rank7, rank.rank8};
             int maximumNumber = numbers.Max();
 
+            if (maximumNumber != 0) { 
             pbRank1.Maximum = maximumNumber;
             pbRank2.Maximum = maximumNumber;
             pbRank3.Maximum = maximumNumber;
@@ -67,8 +68,7 @@ namespace AutoChessOverlay
             pbRank6.Maximum = maximumNumber;
             pbRank7.Maximum = maximumNumber;
             pbRank8.Maximum = maximumNumber;
-
-            var allPoints = rank.rank1 + rank.rank2 + rank.rank3 + rank.rank4 + rank.rank5 + rank.rank6 + rank.rank7 + rank.rank8;
+            }
 
             pbRank1.Value = rank.rank1;
             pbRank2.Value = rank.rank2;
