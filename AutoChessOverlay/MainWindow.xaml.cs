@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using AutoChessOverlay.Model;
+using AutoChessOverlay.View;
+
 
 namespace AutoChessOverlay
 {
@@ -31,14 +34,14 @@ namespace AutoChessOverlay
         private void btRankTitle_Click(object sender, RoutedEventArgs e)
         {
             var rank = new Ranks();
-            rank.rank1 = Int32.Parse(lbRank1.Content.ToString());
-            rank.rank2 = Int32.Parse(lbRank2.Content.ToString());
-            rank.rank3 = Int32.Parse(lbRank3.Content.ToString());
-            rank.rank4 = Int32.Parse(lbRank4.Content.ToString());
-            rank.rank5 = Int32.Parse(lbRank5.Content.ToString());
-            rank.rank6 = Int32.Parse(lbRank6.Content.ToString());
-            rank.rank7 = Int32.Parse(lbRank7.Content.ToString());
-            rank.rank8 = Int32.Parse(lbRank8.Content.ToString());
+            rank.rank1Amount = Int32.Parse(lbRank1.Content.ToString());
+            rank.rank2Amount = Int32.Parse(lbRank2.Content.ToString());
+            rank.rank3Amount = Int32.Parse(lbRank3.Content.ToString());
+            rank.rank4Amount = Int32.Parse(lbRank4.Content.ToString());
+            rank.rank5Amount = Int32.Parse(lbRank5.Content.ToString());
+            rank.rank6Amount = Int32.Parse(lbRank6.Content.ToString());
+            rank.rank7Amount = Int32.Parse(lbRank7.Content.ToString());
+            rank.rank8Amount = Int32.Parse(lbRank8.Content.ToString());
 
             var data = new DataInput(this);
             data.SetTextBoxValue(rank);
@@ -47,16 +50,16 @@ namespace AutoChessOverlay
         }
         public void SetTextBoxValue(Ranks rank)
         {
-            lbRank1.Content = rank.rank1.ToString();
-            lbRank2.Content = rank.rank2.ToString(); 
-            lbRank3.Content = rank.rank3.ToString();
-            lbRank4.Content = rank.rank4.ToString();
-            lbRank5.Content = rank.rank5.ToString();
-            lbRank6.Content = rank.rank6.ToString();
-            lbRank7.Content = rank.rank7.ToString();
-            lbRank8.Content = rank.rank8.ToString();
+            lbRank1.Content = rank.rank1Amount.ToString() + "x";
+            lbRank2.Content = rank.rank2Amount.ToString() + "x";
+            lbRank3.Content = rank.rank3Amount.ToString() + "x";
+            lbRank4.Content = rank.rank4Amount.ToString() + "x";
+            lbRank5.Content = rank.rank5Amount.ToString() + "x";
+            lbRank6.Content = rank.rank6Amount.ToString() + "x";
+            lbRank7.Content = rank.rank7Amount.ToString() + "x";
+            lbRank8.Content = rank.rank8Amount.ToString() + "x";
 
-            int[] numbers = new int[] { rank.rank1, rank.rank2, rank.rank3, rank.rank4, rank.rank5, rank.rank6, rank.rank7, rank.rank8};
+            int[] numbers = new int[] { rank.rank1Amount, rank.rank2Amount, rank.rank3Amount, rank.rank4Amount, rank.rank5Amount, rank.rank6Amount, rank.rank7Amount, rank.rank8Amount};
             int maximumNumber = numbers.Max();
 
             if (maximumNumber != 0) { 
@@ -70,14 +73,14 @@ namespace AutoChessOverlay
             pbRank8.Maximum = maximumNumber;
             }
 
-            pbRank1.Value = rank.rank1;
-            pbRank2.Value = rank.rank2;
-            pbRank3.Value = rank.rank3;
-            pbRank4.Value = rank.rank4;
-            pbRank5.Value = rank.rank5;
-            pbRank6.Value = rank.rank6;
-            pbRank7.Value = rank.rank7;
-            pbRank8.Value = rank.rank8;
+            pbRank1.Value = rank.rank1Amount;
+            pbRank2.Value = rank.rank2Amount;
+            pbRank3.Value = rank.rank3Amount;
+            pbRank4.Value = rank.rank4Amount;
+            pbRank5.Value = rank.rank5Amount;
+            pbRank6.Value = rank.rank6Amount;
+            pbRank7.Value = rank.rank7Amount;
+            pbRank8.Value = rank.rank8Amount;
 
 
         }

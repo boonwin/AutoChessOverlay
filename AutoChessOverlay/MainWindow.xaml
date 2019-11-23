@@ -6,11 +6,9 @@
         xmlns:local="clr-namespace:AutoChessOverlay"
         mc:Ignorable="d"
         Title="MainWindow" Height="323" Width="300" ResizeMode="NoResize">
-    <Grid Background="Magenta">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="33*"/>
-            <ColumnDefinition Width="16*"/>
-        </Grid.ColumnDefinitions>
+  
+        <Grid Background="Magenta">
+
         <Button x:Name="btRankTitle" Content="Placements of the day" HorizontalAlignment="Left" Margin="1,-1,0,249" Width="284" FontSize="22" FontFamily="Eras ITC" FontWeight="Bold" Foreground="Yellow" Background="Transparent" BorderBrush="Transparent" Click="btRankTitle_Click" Grid.ColumnSpan="2"/>
 
         <ProgressBar x:Name="pbRank1" HorizontalAlignment="Left" Height="26" Margin="64,36,0,0" VerticalAlignment="Top" Width="202" Minimum="0" Maximum="100" Foreground="Lime" Grid.ColumnSpan="2"/>
@@ -21,14 +19,14 @@
         <ProgressBar x:Name="pbRank6" HorizontalAlignment="Left" Height="26" Margin="64,192,0,0" VerticalAlignment="Top" Width="202" Minimum="0" Maximum="100" Foreground="Orange" Grid.ColumnSpan="2"/>
         <ProgressBar x:Name="pbRank7" HorizontalAlignment="Left" Height="26" Margin="64,223,0,0" VerticalAlignment="Top" Width="202" Minimum="0" Maximum="100" Foreground="OrangeRed" Grid.ColumnSpan="2"/>
         <ProgressBar x:Name="pbRank8" HorizontalAlignment="Left" Height="26" Margin="64,254,0,0" VerticalAlignment="Top" Width="202" Minimum="0" Maximum="100" Foreground="DarkRed" Grid.ColumnSpan="2"/>
-        <Label x:Name="lbRank1" Content="0" HorizontalAlignment="Left" Margin="136,38,0,0" VerticalAlignment="Top" Height="25" Width="59" HorizontalContentAlignment="Center" FontSize="10"/>
-        <Label x:Name="lbRank2" Content="0" HorizontalAlignment="Left" Margin="136,68,0,0" VerticalAlignment="Top" Height="26" Width="59" HorizontalContentAlignment="Center" FontSize="10"/>
-        <Label x:Name="lbRank3" Content="0" HorizontalAlignment="Left" Margin="136,99,0,0" VerticalAlignment="Top" Height="24" Width="59" HorizontalContentAlignment="Center" FontSize="10"/>
-        <Label x:Name="lbRank4" Content="0" HorizontalAlignment="Left" Margin="136,130,0,0" VerticalAlignment="Top" Height="24" Width="59" HorizontalContentAlignment="Center" FontSize="10"/>
-        <Label x:Name="lbRank5" Content="0" HorizontalAlignment="Left" Margin="136,162,0,0" VerticalAlignment="Top" Height="24" Width="59" HorizontalContentAlignment="Center" FontSize="10"/>
-        <Label x:Name="lbRank6" Content="0" HorizontalAlignment="Left" Margin="136,193,0,0" VerticalAlignment="Top" Height="25" Width="59" HorizontalContentAlignment="Center" FontSize="10"/>
-        <Label x:Name="lbRank7" Content="0" HorizontalAlignment="Left" Margin="136,223,0,0" VerticalAlignment="Top" Height="25" Width="59" HorizontalContentAlignment="Center" FontSize="10"/>
-        <Label x:Name="lbRank8" Content="0" HorizontalAlignment="Left" Margin="136,255,0,0" VerticalAlignment="Top" Height="25" Width="59" HorizontalContentAlignment="Center" FontSize="10"/>
+        <Label x:Name="lbRank1" Content="0x" HorizontalAlignment="Left" Margin="136,38,0,0" VerticalAlignment="Top" Height="25" Width="59" HorizontalContentAlignment="Center" FontSize="14" FontFamily="Arial" FontStyle="Italic" FontWeight="Bold" BorderThickness="0"/>
+        <Label x:Name="lbRank2" Content="0x" HorizontalAlignment="Left" Margin="136,68,0,0" VerticalAlignment="Top" Height="26" Width="59" HorizontalContentAlignment="Center" FontSize="14" FontFamily="Arial" FontStyle="Italic" FontWeight="Bold" BorderThickness="0"/>
+        <Label x:Name="lbRank3" Content="0x" HorizontalAlignment="Left" Margin="136,99,0,0" VerticalAlignment="Top" Height="24" Width="59" HorizontalContentAlignment="Center" FontSize="14" FontFamily="Arial" FontStyle="Italic" FontWeight="Bold" BorderThickness="0"/>
+        <Label x:Name="lbRank4" Content="0x" HorizontalAlignment="Left" Margin="136,130,0,0" VerticalAlignment="Top" Height="24" Width="59" HorizontalContentAlignment="Center" FontSize="14" FontFamily="Arial" FontStyle="Italic" FontWeight="Bold" BorderThickness="0"/>
+        <Label x:Name="lbRank5" Content="0x" HorizontalAlignment="Left" Margin="136,162,0,0" VerticalAlignment="Top" Height="24" Width="59" HorizontalContentAlignment="Center" FontSize="14" FontFamily="Arial" FontStyle="Italic" FontWeight="Bold" BorderThickness="0"/>
+        <Label x:Name="lbRank6" Content="0x" HorizontalAlignment="Left" Margin="136,193,0,0" VerticalAlignment="Top" Height="25" Width="59" HorizontalContentAlignment="Center" FontSize="14" FontFamily="Arial" FontStyle="Italic" FontWeight="Bold" BorderThickness="0"/>
+        <Label x:Name="lbRank7" Content="0x" HorizontalAlignment="Left" Margin="136,223,0,0" VerticalAlignment="Top" Height="25" Width="59" HorizontalContentAlignment="Center" FontSize="14" FontFamily="Arial" FontStyle="Italic" FontWeight="Bold" BorderThickness="0"/>
+        <Label x:Name="lbRank8" Content="0x" HorizontalAlignment="Left" Margin="136,255,0,0" VerticalAlignment="Top" Height="25" Width="59" HorizontalContentAlignment="Center" FontSize="14" FontFamily="Arial" FontStyle="Italic" FontWeight="Bold" BorderThickness="0"/>
         <Image HorizontalAlignment="Left" Height="25" Margin="35,36,0,0" VerticalAlignment="Top" Width="35" Source="Icon/ranks.png"/>
         <Image HorizontalAlignment="Left" Height="25" Margin="35,73,0,0" VerticalAlignment="Top" Width="35" Source="Icon/2nd.png"/>
         <Image HorizontalAlignment="Left" Height="25" Margin="35,104,0,0" VerticalAlignment="Top" Width="35" Source="Icon/3rd.png"/>
@@ -37,9 +35,6 @@
         <Image HorizontalAlignment="Left" Height="25" Margin="35,198,0,0" VerticalAlignment="Top" Width="35" Source="Icon/6th.png"/>
         <Image HorizontalAlignment="Left" Height="25" Margin="35,229,0,0" VerticalAlignment="Top" Width="35" Source="Icon/7th.png"/>
         <Image HorizontalAlignment="Left" Height="25" Margin="35,260,0,0" VerticalAlignment="Top" Width="35" Source="Icon/8th.png"/>
-
-
-
 
     </Grid>
 </Window>
