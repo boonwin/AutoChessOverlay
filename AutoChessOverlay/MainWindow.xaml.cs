@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using AutoChessOverlay.Model;
 using AutoChessOverlay.View;
+using System.IO;
 
 
 namespace AutoChessOverlay
@@ -27,6 +28,7 @@ namespace AutoChessOverlay
          public MainWindow()
         {
             InitializeComponent();
+            Directory.CreateDirectory(@"Data");
             var data = new DataInput(this);   
             data.Show();
         }

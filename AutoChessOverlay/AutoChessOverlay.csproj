@@ -32,11 +32,11 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugSymbols>false</DebugSymbols>
-    <DebugType>none</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -84,6 +84,7 @@
     <Compile Include="Model\FilePathes.cs" />
     <Compile Include="Model\Games.cs" />
     <Compile Include="Model\HsBattlegroundsHeroes.cs" />
+    <Compile Include="Model\RankHistory.cs" />
     <Compile Include="Model\UnderlordsHeroes.cs" />
     <Compile Include="View\GameHistory.xaml.cs">
       <DependentUpon>GameHistory.xaml</DependentUpon>
@@ -154,12 +155,6 @@
     <Resource Include="yoBBTVEmote.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Icon\ranks.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Icon\2nd.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.7.2 %28x86 und x64%29</ProductName>
@@ -172,15 +167,17 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Control\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon\2nd.png" />
     <Resource Include="Icon\3rd.png" />
     <Resource Include="Icon\4th.png" />
     <Resource Include="Icon\5th.png" />
     <Resource Include="Icon\6th.png" />
     <Resource Include="Icon\7th.png" />
     <Resource Include="Icon\8th.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Control\" />
+    <Resource Include="Icon\ranks.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

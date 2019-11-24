@@ -76,80 +76,125 @@ namespace AutoChessOverlay.View
 
             };
 
-     
+            if (File.Exists(FilePathes.gameResultPath)){ 
             var data = File.ReadAllLines(FilePathes.gameResultPath).ToList();
-
-            var dates = new List<string>();
-            var first = 0;
-            var second = 0;
-            var third = 0;
-            var fourth = 0;
-            var fifth = 0;
-            var sixt = 0;
-            var seventh = 0;
-            var eighth = 0;
-
+            var rankHistoryList = new List<RankHistory>();
             foreach (var line in data)
             {
-                var splitedLine = line.Split(';');
-                dates.Add(splitedLine[0]);
-                if (splitedLine[1] == "1st")
-                {
-                    first++;
-                }
-                if (splitedLine[1] == "2nd")
-                {
-                    second++;
-                }
-                if (splitedLine[1] == "3rd")
-                {
-                    third++;
-                }
-                if (splitedLine[1] == "4th")
-                {
-                    fourth++;
-                }
-                if (splitedLine[1] == "5th")
-                {
-                    fifth++;
-                }
-                if (splitedLine[1] == "6th")
-                {
-                    sixt++;
-                }
-                if (splitedLine[1] == "7th")
-                {
-                    seventh++;
-                }
-                if (splitedLine[1] == "8th")
-                {
-                    eighth++;
-                }
-
-                var rank = splitedLine[1];
+                rankHistoryList.Add(RankHistory.parse(line));
             };
 
-            Labels = dates.GroupBy(test => test)
-               .Select(grp => grp.First()).ToArray();
 
-            SeriesCollection[0].Values.Add(first);
-            SeriesCollection[1].Values.Add(second);
-            SeriesCollection[2].Values.Add(third);
-            SeriesCollection[3].Values.Add(fourth);
-            SeriesCollection[4].Values.Add(fifth);
-            SeriesCollection[5].Values.Add(sixt);
-            SeriesCollection[6].Values.Add(seventh);
-            SeriesCollection[7].Values.Add(eighth);
+            var result = rankHistoryList.GroupBy(x => new { x.Dates, x.Rank })
+                   .Select(g => new { g.Key.Dates, g.Key.Rank, Amount = g.Count() })
 
-            // Labels = new[] { "1", "2", "3", "4", "5" };
-            ////modifying any series values will also animate and update the chart
+                   .ToList();
+
+            var dates = new List<string>();
+            var allRanks = new List<string>
+            {
+                "1st"
+                ,"2nd"
+                ,"3rd"
+                ,"4th"
+                ,"5th"
+                ,"6th"
+                ,"7th"
+                ,"8th"
+            };
+
+            foreach (var entry in result)
+            {
+                dates.Add(entry.Dates);
+            }
+            var singleDates = dates.GroupBy(x => x).Select(grp => grp.First()).ToArray();
+            Labels = singleDates;
+
+            foreach (var ran in allRanks)
+            {
+                foreach (var day in singleDates)
+                {
+                    if (ran == "1st")
+                    {
+                        if (result.Exists(x => x.Dates == day && x.Rank == ran) == true)
+                        {                 
+                        SeriesCollection[0].Values.Add(result.Where(w => w.Dates == day && w.Rank == ran).Select(x => x.Amount).First());
+                        }
+                        else SeriesCollection[0].Values.Add(0);
+                    }
+
+                    if (ran == "2nd")
+                    {
+                        if (result.Exists(x => x.Dates == day && x.Rank == ran) == true)
+                        {
+                            SeriesCollection[1].Values.Add(result.Where(w => w.Dates == day && w.Rank == ran).Select(x => x.Amount).First());
+                        }
+                        else SeriesCollection[1].Values.Add(0);
+                    }
+                    if (ran == "3rd")
+                    {
+                        if (result.Exists(x => x.Dates == day && x.Rank == ran) == true)
+                        {
+                            SeriesCollection[2].Values.Add(result.Where(w => w.Dates == day && w.Rank == ran).Select(x => x.Amount).First());
+                        }
+                        else SeriesCollection[2].Values.Add(0);
+                    }
+                    if (ran == "4th")
+                    {
+                        if (result.Exists(x => x.Dates == day && x.Rank == ran) == true)
+                        {
+                            SeriesCollection[3].Values.Add(result.Where(w => w.Dates == day && w.Rank == ran).Select(x => x.Amount).First());
+                        }
+                        else SeriesCollection[3].Values.Add(0);
+                    }
+                    if (ran == "5th")
+                    {
+                        if (result.Exists(x => x.Dates == day && x.Rank == ran) == true)
+                        {
+                            SeriesCollection[4].Values.Add(result.Where(w => w.Dates == day && w.Rank == ran).Select(x => x.Amount).First());
+                        }
+                        else SeriesCollection[4].Values.Add(0);
+                    }
+                    if (ran == "6th")
+                    {
+                        if (result.Exists(x => x.Dates == day && x.Rank == ran) == true)
+                        {
+                            SeriesCollection[5].Values.Add(result.Where(w => w.Dates == day && w.Rank == ran).Select(x => x.Amount).First());
+                        }
+                        else SeriesCollection[5].Values.Add(0);
+                    }
+                    if (ran == "7th")
+                    {
+                        if (result.Exists(x => x.Dates == day && x.Rank == ran) == true)
+                        {
+                            SeriesCollection[6].Values.Add(result.Where(w => w.Dates == day && w.Rank == ran).Select(x => x.Amount).First());
+                        }
+                        else SeriesCollection[6].Values.Add(0);
+                    }
+                    if (ran == "8th")
+                    {
+                        if (result.Exists(x => x.Dates == day && x.Rank == ran) == true)
+                        {
+                            SeriesCollection[7].Values.Add(result.Where(w => w.Dates == day && w.Rank == ran).Select(x => x.Amount).First());
+                        }
+                        else SeriesCollection[7].Values.Add(0);
+                    }
+
+                }
+            }
+
+
+
+
+            }
+
 
 
 
             DataContext = this;
         }
 
-  
+
         public SeriesCollection SeriesCollection { get; set; }
         public string[] Labels { get; set; }
         public Func<int, string> YFormatter { get; set; }

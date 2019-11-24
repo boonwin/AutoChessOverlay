@@ -55,10 +55,11 @@ namespace AutoChessOverlay.View
 
         private void btnr1plus1_Click(object sender, RoutedEventArgs e)
         {
+            readData();
             tbRank1Amount.Text = setRanksPlusOne(tbRank1Amount.Text);
             CreateRanksAndSetMainWindow();
-            saveRound("1st");
-
+          //  saveRound("1st");
+            
         }
      
 
@@ -198,5 +199,62 @@ namespace AutoChessOverlay.View
         
         }
 
+        private void readData()
+        {
+            var data = File.ReadAllLines(FilePathes.gameResultPath).ToList();
+
+            var dates = new List<string>();
+            var first = 0;
+            var second = 0;
+            var third = 0;
+            var fourth = 0;
+            var fifth = 0;
+            var sixt = 0;
+            var seventh = 0;
+            var eighth = 0;
+
+            foreach (var line in data)
+            {
+                var splitedLine = line.Split(';');
+                dates.Add(splitedLine[0]);
+                if (splitedLine[1] == "1st")
+                {
+                    first++;
+                }
+                if (splitedLine[1] == "2nd")
+                {
+                    second++;
+                }
+                if (splitedLine[1] == "3rd")
+                {
+                    third++;
+                }
+                if (splitedLine[1] == "4th")
+                {
+                    fourth++;
+                }
+                if (splitedLine[1] == "5th")
+                {
+                    fifth++;
+                }
+                if (splitedLine[1] == "6th")
+                {
+                    sixt++;
+                }
+                if (splitedLine[1] == "7th")
+                {
+                    seventh++;
+                }
+                if (splitedLine[1] == "8th")
+                {
+                    eighth++;
+                }
+
+                var rank = splitedLine[1];
+            };
+
+            var label = dates.GroupBy(test => test)
+               .Select(grp => grp.First()).ToArray();
+        }
     }
 }
