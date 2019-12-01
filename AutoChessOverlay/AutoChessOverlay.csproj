@@ -93,6 +93,9 @@
     <Compile Include="View\Details.xaml.cs">
       <DependentUpon>Details.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Skins.xaml.cs">
+      <DependentUpon>Skins.xaml</DependentUpon>
+    </Compile>
     <Page Include="View\DataInput.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -117,6 +120,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="View\Details.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Skins.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -170,14 +177,33 @@
     <Folder Include="Control\" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Icon\2nd.png" />
-    <Resource Include="Icon\3rd.png" />
-    <Resource Include="Icon\4th.png" />
-    <Resource Include="Icon\5th.png" />
-    <Resource Include="Icon\6th.png" />
-    <Resource Include="Icon\7th.png" />
-    <Resource Include="Icon\8th.png" />
-    <Resource Include="Icon\ranks.png" />
+    <Resource Include="Skins\Base\2nd.png" />
+    <Resource Include="Skins\Base\3rd.png" />
+    <Resource Include="Skins\Base\4th.png" />
+    <Resource Include="Skins\Base\5th.png" />
+    <Resource Include="Skins\Base\6th.png" />
+    <Resource Include="Skins\Base\7th.png" />
+    <Resource Include="Skins\Base\8th.png" />
+    <Resource Include="Skins\Base\1st.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon\title.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Skins\Ice\1st.png" />
+    <Resource Include="Skins\Ice\2nd.png" />
+    <Resource Include="Skins\Ice\3rd.png" />
+    <Resource Include="Skins\Ice\4th.png" />
+    <Resource Include="Skins\Ice\5th.png" />
+    <Resource Include="Skins\Ice\6th.png" />
+    <Resource Include="Skins\Ice\7th.png" />
+    <Resource Include="Skins\Ice\8th.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Skins\Base\skin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Skins\Ice\skin.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

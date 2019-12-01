@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29509.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoChessOverlay", "AutoChessOverlay\AutoChessOverlay.csproj", "{BF91C77C-449D-4FA2-B595-352C3D5F90A6}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "BoonwinsAutoBattlerOverlay", "BoonwinsAutoBattlerOverlay\BoonwinsAutoBattlerOverlay.vdproj", "{05083E2A-B546-45EC-B193-7B9344B644FC}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "BoonwinsAutoBattlerOverlay", "BoonwinsAutoBattlerOverlay\BoonwinsAutoBattlerOverlay.vdproj", "{6E8AFF57-809D-4644-86F0-4B2D841399D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,8 +17,8 @@ Global
 		{BF91C77C-449D-4FA2-B595-352C3D5F90A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF91C77C-449D-4FA2-B595-352C3D5F90A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF91C77C-449D-4FA2-B595-352C3D5F90A6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{05083E2A-B546-45EC-B193-7B9344B644FC}.Debug|Any CPU.ActiveCfg = Debug
-		{05083E2A-B546-45EC-B193-7B9344B644FC}.Release|Any CPU.ActiveCfg = Release
+		{6E8AFF57-809D-4644-86F0-4B2D841399D4}.Debug|Any CPU.ActiveCfg = Debug
+		{6E8AFF57-809D-4644-86F0-4B2D841399D4}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

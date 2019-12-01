@@ -8,7 +8,9 @@ namespace AutoChessOverlay.Model
 {
     public class FilePathes
     {
-        public const string writePath = @"data\";
-        public const string gameResultPath = writePath+"gameresults.dat";
+        public string writePath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\boonwin\data\";     
+        public string gameResultPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\boonwin\data\gameresults.dat";
+        public string underlordsGameResultPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\boonwin\data\ungameresults.dat";
+
     }
 }

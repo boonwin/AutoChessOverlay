@@ -23,13 +23,13 @@ namespace AutoChessOverlay.View
     /// </summary>
     public partial class GameHistory : Window
     {
-        public GameHistory()
+        public GameHistory(string game)
         {
             InitializeComponent();
-            CreateGraph();
+            CreateGraph(game);
         }
 
-        private void CreateGraph()
+        private void CreateGraph(string gamePath)
         {
             SeriesCollection = new SeriesCollection
             {
@@ -76,8 +76,9 @@ namespace AutoChessOverlay.View
 
             };
 
-            if (File.Exists(FilePathes.gameResultPath)){ 
-            var data = File.ReadAllLines(FilePathes.gameResultPath).ToList();
+      
+            if (File.Exists(gamePath)){ 
+            var data = File.ReadAllLines(gamePath).ToList();
             var rankHistoryList = new List<RankHistory>();
             foreach (var line in data)
             {

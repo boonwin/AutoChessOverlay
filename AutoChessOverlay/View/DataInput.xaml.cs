@@ -19,9 +19,10 @@ namespace AutoChessOverlay.View
     /// <summary>
     /// Interaktionslogik für DataInput.xaml
     /// </summary>
-    public partial class DataInput 
+    public partial class DataInput
     {
         private readonly MainWindow _mainWindow;
+        private string gameFilePath = null;
 
         public DataInput(MainWindow mainWindow)
         {
@@ -30,14 +31,21 @@ namespace AutoChessOverlay.View
 
         }
 
-   
+
         List<Ranks> ranks = new List<Ranks>();
 
-    
+
         private void btnEnterData_Click(object sender, RoutedEventArgs e)
         {
-            var history = new GameHistory();
-            history.Show();
+            if (String.IsNullOrEmpty(gameFilePath) == true)
+            {
+                MessageBox.Show("Please choose a Game", "Boonwins Autobattler Overlay", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            }
+            else
+            {
+                var history = new GameHistory(gameFilePath);
+                history.Show();
+            }
         }
 
 
@@ -55,97 +63,207 @@ namespace AutoChessOverlay.View
 
         private void btnr1plus1_Click(object sender, RoutedEventArgs e)
         {
-            readData();
-            tbRank1Amount.Text = setRanksPlusOne(tbRank1Amount.Text);
-            CreateRanksAndSetMainWindow();
-          //  saveRound("1st");
-            
+            if (String.IsNullOrEmpty(gameFilePath) == true)
+            {
+                MessageBox.Show("Please choose a Game before +1", "Boonwins Autobattler Overlay", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            }
+            else
+            {
+                tbRank1Amount.Text = setRanksPlusOne(tbRank1Amount.Text);
+                CreateRanksAndSetMainWindow();
+                saveRound("1st");
+            }
         }
-     
+
 
         private void btnr2plus1_Click(object sender, RoutedEventArgs e)
         {
-            tbRank2Amount.Text = setRanksPlusOne(tbRank2Amount.Text);
-            CreateRanksAndSetMainWindow();
-            saveRound("2nd");
+            if (String.IsNullOrEmpty(gameFilePath) == true)
+            {
+                MessageBox.Show("Please choose a Game before +1", "Boonwins Autobattler Overlay", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            }
+            else
+            {
+                tbRank2Amount.Text = setRanksPlusOne(tbRank2Amount.Text);
+                CreateRanksAndSetMainWindow();
+                saveRound("2nd");
+            }
         }
         private void btnr3plus1_Click(object sender, RoutedEventArgs e)
         {
-            tbRank3Amount.Text = setRanksPlusOne(tbRank3Amount.Text);
-            CreateRanksAndSetMainWindow();
-            saveRound("3rd");
+            if (String.IsNullOrEmpty(gameFilePath) == true)
+            {
+                MessageBox.Show("Please choose a Game before +1", "Boonwins Autobattler Overlay", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            }
+            else
+            {
+                tbRank3Amount.Text = setRanksPlusOne(tbRank3Amount.Text);
+                CreateRanksAndSetMainWindow();
+                saveRound("3rd");
+            }
 
         }
         private void btnr4plus1_Click(object sender, RoutedEventArgs e)
         {
-            tbRank4Amount.Text = setRanksPlusOne(tbRank4Amount.Text);
-            CreateRanksAndSetMainWindow();
-            saveRound("4th");
+            if (String.IsNullOrEmpty(gameFilePath) == true)
+            {
+                MessageBox.Show("Please choose a Game before +1", "Boonwins Autobattler Overlay", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            }
+            else
+            {
+                tbRank4Amount.Text = setRanksPlusOne(tbRank4Amount.Text);
+                CreateRanksAndSetMainWindow();
+                saveRound("4th");
+            }
         }
         private void btnr5plus1_Click(object sender, RoutedEventArgs e)
         {
-            tbRank5Amount.Text = setRanksPlusOne(tbRank5Amount.Text);
-            CreateRanksAndSetMainWindow();
-            saveRound("5th");
+            if (String.IsNullOrEmpty(gameFilePath) == true)
+            {
+                MessageBox.Show("Please choose a Game before +1", "Boonwins Autobattler Overlay", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            }
+            else
+            {
+                tbRank5Amount.Text = setRanksPlusOne(tbRank5Amount.Text);
+                CreateRanksAndSetMainWindow();
+                saveRound("5th");
+            }
         }
         private void btnr6plus1_Click(object sender, RoutedEventArgs e)
         {
-            tbRank6Amount.Text = setRanksPlusOne(tbRank6Amount.Text);
-            CreateRanksAndSetMainWindow();
-            saveRound("6th");
+            if (String.IsNullOrEmpty(gameFilePath) == true)
+            {
+                MessageBox.Show("Please choose a Game before +1", "Boonwins Autobattler Overlay", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            }
+            else
+            {
+                tbRank6Amount.Text = setRanksPlusOne(tbRank6Amount.Text);
+                CreateRanksAndSetMainWindow();
+                saveRound("6th");
+            }
         }
         private void btnr7plus1_Click(object sender, RoutedEventArgs e)
         {
-            tbRank7Amount.Text = setRanksPlusOne(tbRank7Amount.Text);
-            CreateRanksAndSetMainWindow();
-            saveRound("7th");
+            if (String.IsNullOrEmpty(gameFilePath) == true)
+            {
+                MessageBox.Show("Please choose a Game before +1", "Boonwins Autobattler Overlay", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            }
+            else
+            {
+                tbRank7Amount.Text = setRanksPlusOne(tbRank7Amount.Text);
+                CreateRanksAndSetMainWindow();
+                saveRound("7th");
+            }
         }
         private void btnr8plus1_Click(object sender, RoutedEventArgs e)
         {
-            tbRank8Amount.Text = setRanksPlusOne(tbRank8Amount.Text);
-            CreateRanksAndSetMainWindow();
-            saveRound("8th");
+            if (String.IsNullOrEmpty(gameFilePath) == true)
+            {
+                MessageBox.Show("Please choose a Game before +1", "Boonwins Autobattler Overlay", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            }
+            else
+            {
+                tbRank8Amount.Text = setRanksPlusOne(tbRank8Amount.Text);
+                CreateRanksAndSetMainWindow();
+                saveRound("8th");
+            }
         }
         private void btnr1plus1_MouseRightButtonUp(object sender, MouseButtonEventArgs e)
         {
-            tbRank1Amount.Text = setRanksMinusOne(tbRank1Amount.Text);
-            CreateRanksAndSetMainWindow();
-        
+            if (String.IsNullOrEmpty(gameFilePath) == true)
+            {
+                MessageBox.Show("Please choose a Game before +1", "Boonwins Autobattler Overlay", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            }
+            else
+            {
+                tbRank1Amount.Text = setRanksMinusOne(tbRank1Amount.Text);
+                CreateRanksAndSetMainWindow();
+            }
+
         }
         private void btnr2plus1_MouseRightButtonUp(object sender, MouseButtonEventArgs e)
         {
-            tbRank2Amount.Text = setRanksMinusOne(tbRank2Amount.Text);
-            CreateRanksAndSetMainWindow();
+            if (String.IsNullOrEmpty(gameFilePath) == true)
+            {
+                MessageBox.Show("Please choose a Game before +1", "Boonwins Autobattler Overlay", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            }
+            else
+            {
+                tbRank2Amount.Text = setRanksMinusOne(tbRank2Amount.Text);
+                CreateRanksAndSetMainWindow();
+            }
         }
         private void btnr3plus1_MouseRightButtonUp(object sender, MouseButtonEventArgs e)
         {
-            tbRank3Amount.Text = setRanksMinusOne(tbRank3Amount.Text);
-            CreateRanksAndSetMainWindow();
+            if (String.IsNullOrEmpty(gameFilePath) == true)
+            {
+                MessageBox.Show("Please choose a Game before +1", "Boonwins Autobattler Overlay", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            }
+            else
+            {
+                tbRank3Amount.Text = setRanksMinusOne(tbRank3Amount.Text);
+                CreateRanksAndSetMainWindow();
+            }
         }
         private void btnr4plus1_MouseRightButtonUp(object sender, MouseButtonEventArgs e)
         {
-            tbRank4Amount.Text = setRanksMinusOne(tbRank4Amount.Text);
-            CreateRanksAndSetMainWindow();
+            if (String.IsNullOrEmpty(gameFilePath) == true)
+            {
+                MessageBox.Show("Please choose a Game before +1", "Boonwins Autobattler Overlay", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            }
+            else
+            {
+                tbRank4Amount.Text = setRanksMinusOne(tbRank4Amount.Text);
+                CreateRanksAndSetMainWindow();
+            }
         }
         private void btnr5plus1_MouseRightButtonUp(object sender, MouseButtonEventArgs e)
         {
-            tbRank5Amount.Text = setRanksMinusOne(tbRank5Amount.Text);
-            CreateRanksAndSetMainWindow();
+            if (String.IsNullOrEmpty(gameFilePath) == true)
+            {
+                MessageBox.Show("Please choose a Game before +1", "Boonwins Autobattler Overlay", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            }
+            else
+            {
+                tbRank5Amount.Text = setRanksMinusOne(tbRank5Amount.Text);
+                CreateRanksAndSetMainWindow();
+            }
         }
         private void btnr6plus1_MouseRightButtonUp(object sender, MouseButtonEventArgs e)
         {
-            tbRank6Amount.Text = setRanksMinusOne(tbRank6Amount.Text);
-            CreateRanksAndSetMainWindow();
+            if (String.IsNullOrEmpty(gameFilePath) == true)
+            {
+                MessageBox.Show("Please choose a Game before +1", "Boonwins Autobattler Overlay", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            }
+            else
+            {
+                tbRank6Amount.Text = setRanksMinusOne(tbRank6Amount.Text);
+                CreateRanksAndSetMainWindow();
+            }
         }
         private void btnr7plus1_MouseRightButtonUp(object sender, MouseButtonEventArgs e)
         {
-            tbRank7Amount.Text = setRanksMinusOne(tbRank7Amount.Text);
-            CreateRanksAndSetMainWindow();
+            if (String.IsNullOrEmpty(gameFilePath) == true)
+            {
+                MessageBox.Show("Please choose a Game before +1", "Boonwins Autobattler Overlay", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            }
+            else
+            {
+                tbRank7Amount.Text = setRanksMinusOne(tbRank7Amount.Text);
+                CreateRanksAndSetMainWindow();
+            }
         }
         private void btnr8plus1_MouseRightButtonUp(object sender, MouseButtonEventArgs e)
         {
-            tbRank8Amount.Text = setRanksMinusOne(tbRank8Amount.Text);
-            CreateRanksAndSetMainWindow();
+            if (String.IsNullOrEmpty(gameFilePath) == true)
+            {
+                MessageBox.Show("Please choose a Game before +1", "Boonwins Autobattler Overlay", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            }
+            else
+            {
+                tbRank8Amount.Text = setRanksMinusOne(tbRank8Amount.Text);
+                CreateRanksAndSetMainWindow();
+            }
         }
 
         private string setRanksPlusOne(string tbrankAmount)
@@ -161,7 +279,7 @@ namespace AutoChessOverlay.View
                 return (Int32.Parse(tbrankAmount) - 1).ToString();
 
             }
-            else return "0";          
+            else return "0";
         }
 
         private void CreateRanksAndSetMainWindow()
@@ -176,85 +294,59 @@ namespace AutoChessOverlay.View
             rank.rank7Amount = Int32.Parse(tbRank7Amount.Text);
             rank.rank8Amount = Int32.Parse(tbRank8Amount.Text);
             ranks.Add(rank);
-          
+
             _mainWindow.SetTextBoxValue(rank);
 
         }
 
         private void cbGame_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (cbGame.SelectedItem.ToString() == "Battlegrounds") { 
-            DataContext = new HsBattlegroundsHeroes();
+            var filePath = new FilePathes();
+            if (cbGame.SelectedItem.ToString() == "Battlegrounds")
+            {
+                DataContext = new HsBattlegroundsHeroes();
+                gameFilePath = filePath.gameResultPath;
             }
             if (cbGame.SelectedItem.ToString() == "Underlords")
             {
                 DataContext = new UnderlordsHeroes();
+                gameFilePath = filePath.underlordsGameResultPath;
             }
         }
 
         private void saveRound(string rank)
         {
+
             var line = DateTime.Now.ToString("yyyyMMdd") + ";" + rank + "\r\n";
-            File.AppendAllText(FilePathes.gameResultPath, line );
-        
+            File.AppendAllText(gameFilePath, line);
+
         }
-
-        private void readData()
+        private void mnuThemes_Click(object sender, RoutedEventArgs e)
         {
-            var data = File.ReadAllLines(FilePathes.gameResultPath).ToList();
-
-            var dates = new List<string>();
-            var first = 0;
-            var second = 0;
-            var third = 0;
-            var fourth = 0;
-            var fifth = 0;
-            var sixt = 0;
-            var seventh = 0;
-            var eighth = 0;
-
-            foreach (var line in data)
-            {
-                var splitedLine = line.Split(';');
-                dates.Add(splitedLine[0]);
-                if (splitedLine[1] == "1st")
-                {
-                    first++;
-                }
-                if (splitedLine[1] == "2nd")
-                {
-                    second++;
-                }
-                if (splitedLine[1] == "3rd")
-                {
-                    third++;
-                }
-                if (splitedLine[1] == "4th")
-                {
-                    fourth++;
-                }
-                if (splitedLine[1] == "5th")
-                {
-                    fifth++;
-                }
-                if (splitedLine[1] == "6th")
-                {
-                    sixt++;
-                }
-                if (splitedLine[1] == "7th")
-                {
-                    seventh++;
-                }
-                if (splitedLine[1] == "8th")
-                {
-                    eighth++;
-                }
-
-                var rank = splitedLine[1];
-            };
-
-            var label = dates.GroupBy(test => test)
-               .Select(grp => grp.First()).ToArray();
+            var skin = new Skins(_mainWindow);
+            skin.Show();
+        }
+        private void mnuResetStats_Click(object sender, RoutedEventArgs e)
+        {
+            var rank = new Ranks();
+            rank.rank1Amount = 0;
+            rank.rank2Amount = 0;
+            rank.rank3Amount = 0;
+            rank.rank4Amount = 0;
+            rank.rank5Amount = 0;
+            rank.rank6Amount = 0;
+            rank.rank7Amount = 0;
+            rank.rank8Amount = 0;
+            ranks.Add(rank);
+            tbRank1Amount.Text = rank.rank1Amount.ToString();
+            tbRank2Amount.Text = rank.rank2Amount.ToString();
+            tbRank3Amount.Text = rank.rank3Amount.ToString();
+            tbRank4Amount.Text = rank.rank4Amount.ToString();
+            tbRank5Amount.Text = rank.rank5Amount.ToString();
+            tbRank6Amount.Text = rank.rank6Amount.ToString();
+            tbRank7Amount.Text = rank.rank7Amount.ToString();
+            tbRank8Amount.Text = rank.rank8Amount.ToString();
+            _mainWindow.SetTextBoxValue(rank);
         }
     }
 }

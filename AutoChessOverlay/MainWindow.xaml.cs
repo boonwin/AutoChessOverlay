@@ -28,23 +28,25 @@ namespace AutoChessOverlay
          public MainWindow()
         {
             InitializeComponent();
-            Directory.CreateDirectory(@"Data");
             var data = new DataInput(this);   
             data.Show();
+            var filePath = new FilePathes();
+            Directory.CreateDirectory(filePath.writePath);
         }
 
         private void btRankTitle_Click(object sender, RoutedEventArgs e)
         {
             var rank = new Ranks();
-            rank.rank1Amount = Int32.Parse(lbRank1.Content.ToString());
-            rank.rank2Amount = Int32.Parse(lbRank2.Content.ToString());
-            rank.rank3Amount = Int32.Parse(lbRank3.Content.ToString());
-            rank.rank4Amount = Int32.Parse(lbRank4.Content.ToString());
-            rank.rank5Amount = Int32.Parse(lbRank5.Content.ToString());
-            rank.rank6Amount = Int32.Parse(lbRank6.Content.ToString());
-            rank.rank7Amount = Int32.Parse(lbRank7.Content.ToString());
-            rank.rank8Amount = Int32.Parse(lbRank8.Content.ToString());
-
+            if (rank != null) { 
+            rank.rank1Amount = Int32.Parse(lbRank1.Content.ToString().Substring(0, lbRank1.Content.ToString().Length - 1));
+            rank.rank2Amount = Int32.Parse(lbRank2.Content.ToString().Substring(0, lbRank2.Content.ToString().Length - 1));
+            rank.rank3Amount = Int32.Parse(lbRank3.Content.ToString().Substring(0, lbRank3.Content.ToString().Length - 1));
+            rank.rank4Amount = Int32.Parse(lbRank4.Content.ToString().Substring(0, lbRank4.Content.ToString().Length - 1));
+            rank.rank5Amount = Int32.Parse(lbRank5.Content.ToString().Substring(0, lbRank5.Content.ToString().Length - 1));
+            rank.rank6Amount = Int32.Parse(lbRank6.Content.ToString().Substring(0, lbRank6.Content.ToString().Length - 1));
+            rank.rank7Amount = Int32.Parse(lbRank7.Content.ToString().Substring(0, lbRank7.Content.ToString().Length - 1));
+            rank.rank8Amount = Int32.Parse(lbRank8.Content.ToString().Substring(0, lbRank8.Content.ToString().Length - 1));
+            }
             var data = new DataInput(this);
             data.SetTextBoxValue(rank);
             data.Show();
@@ -84,9 +86,23 @@ namespace AutoChessOverlay
             pbRank7.Value = rank.rank7Amount;
             pbRank8.Value = rank.rank8Amount;
 
-
+           tbAvgRankText.Content = "Average Rank: " + SetAvgRankValue(rank);
         }
 
 
+
+        public string SetAvgRankValue(Ranks rank)
+        {
+            var totalAmount = rank.rank1Amount + rank.rank2Amount + rank.rank3Amount + rank.rank4Amount + rank.rank5Amount + rank.rank6Amount + rank.rank7Amount + rank.rank8Amount;
+            var weightedAmount = (1 * rank.rank1Amount) + (2 * rank.rank2Amount) + (3 * rank.rank3Amount) + (4 * rank.rank4Amount) + (5 * rank.rank5Amount) + (6 * rank.rank6Amount) + (7 * rank.rank7Amount) + (8 * rank.rank8Amount);
+
+            if (totalAmount != 0)
+            {
+                return (weightedAmount / totalAmount).ToString();
+            }
+            else return "";
+        }
+
+    
     }
 }
