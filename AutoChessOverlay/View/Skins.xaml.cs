@@ -134,5 +134,59 @@ namespace AutoChessOverlay.View
             _mainWindow.pbRank7.Background = Brushes.SteelBlue;
             _mainWindow.pbRank8.Background = Brushes.SteelBlue;
         }
+
+        private void btnHsSkin_Click(object sender, RoutedEventArgs e)
+        {
+            _mainWindow.btRankTitle.Foreground = Brushes.LightSkyBlue;
+            _mainWindow.btRankTitle.FontFamily = new FontFamily("Hs kingdom");
+            _mainWindow.img1st.Source = new BitmapImage(new Uri("pack://application:,,,/BoonwinsAutobattlerStreamOverlay;component/Skins/Hs/1st.png"));
+            _mainWindow.img2nd.Source = new BitmapImage(new Uri("pack://application:,,,/BoonwinsAutobattlerStreamOverlay;component/Skins/Hs/2nd.png"));
+            _mainWindow.img3rd.Source = new BitmapImage(new Uri("pack://application:,,,/BoonwinsAutobattlerStreamOverlay;component/Skins/Hs/3rd.png"));
+            _mainWindow.img4th.Source = new BitmapImage(new Uri("pack://application:,,,/BoonwinsAutobattlerStreamOverlay;component/Skins/Hs/4th.png"));
+            _mainWindow.img5th.Source = new BitmapImage(new Uri("pack://application:,,,/BoonwinsAutobattlerStreamOverlay;component/Skins/Hs/5th.png"));
+            _mainWindow.img6th.Source = new BitmapImage(new Uri("pack://application:,,,/BoonwinsAutobattlerStreamOverlay;component/Skins/Hs/6th.png"));
+            _mainWindow.img7th.Source = new BitmapImage(new Uri("pack://application:,,,/BoonwinsAutobattlerStreamOverlay;component/Skins/Hs/7th.png"));
+            _mainWindow.img8th.Source = new BitmapImage(new Uri("pack://application:,,,/BoonwinsAutobattlerStreamOverlay;component/Skins/Hs/8th.png"));
+            _mainWindow.tbAvgRankText.Foreground = Brushes.LightSkyBlue;
+            _mainWindow.tbAvgRankText.FontFamily = new FontFamily("Ice kingdom");
+
+            _mainWindow.lbRank1.Foreground = Brushes.White;
+            _mainWindow.lbRank2.Foreground = Brushes.White;
+            _mainWindow.lbRank3.Foreground = Brushes.White;
+            _mainWindow.lbRank4.Foreground = Brushes.White;
+            _mainWindow.lbRank5.Foreground = Brushes.White;
+            _mainWindow.lbRank6.Foreground = Brushes.White;
+            _mainWindow.lbRank7.Foreground = Brushes.White;
+            _mainWindow.lbRank8.Foreground = Brushes.White;
+
+
+            _mainWindow.lbRank1.FontFamily = new FontFamily("Ice kingdom");
+            _mainWindow.lbRank2.FontFamily = new FontFamily("Ice kingdom");
+            _mainWindow.lbRank3.FontFamily = new FontFamily("Ice kingdom");
+            _mainWindow.lbRank4.FontFamily = new FontFamily("Ice kingdom");
+            _mainWindow.lbRank5.FontFamily = new FontFamily("Ice kingdom");
+            _mainWindow.lbRank6.FontFamily = new FontFamily("Ice kingdom");
+            _mainWindow.lbRank7.FontFamily = new FontFamily("Ice kingdom");
+            _mainWindow.lbRank8.FontFamily = new FontFamily("Ice kingdom");
+
+
+            _mainWindow.pbRank1.Foreground = Brushes.LightSkyBlue;
+            _mainWindow.pbRank2.Foreground = Brushes.LightSkyBlue;
+            _mainWindow.pbRank3.Foreground = Brushes.LightSkyBlue;
+            _mainWindow.pbRank4.Foreground = Brushes.LightSkyBlue;
+            _mainWindow.pbRank5.Foreground = Brushes.LightSkyBlue;
+            _mainWindow.pbRank6.Foreground = Brushes.LightSkyBlue;
+            _mainWindow.pbRank7.Foreground = Brushes.LightSkyBlue;
+            _mainWindow.pbRank8.Foreground = Brushes.LightSkyBlue;
+
+            _mainWindow.pbRank1.Background = Brushes.SteelBlue;
+            _mainWindow.pbRank2.Background = Brushes.SteelBlue;
+            _mainWindow.pbRank3.Background = Brushes.SteelBlue;
+            _mainWindow.pbRank4.Background = Brushes.SteelBlue;
+            _mainWindow.pbRank5.Background = Brushes.SteelBlue;
+            _mainWindow.pbRank6.Background = Brushes.SteelBlue;
+            _mainWindow.pbRank7.Background = Brushes.SteelBlue;
+            _mainWindow.pbRank8.Background = Brushes.SteelBlue;
+        }
     }
 }
