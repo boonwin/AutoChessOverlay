@@ -26,8 +26,8 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>true</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>https://raw.githubusercontent.com/boonwin/AutoChessOverlay/master/AutoChessOverlay/AutoChessOverlay/publish/</InstallUrl>
-    <UpdateUrl>https://raw.githubusercontent.com/boonwin/AutoChessOverlay/master/AutoChessOverlay/AutoChessOverlay/publish/</UpdateUrl>
+    <InstallUrl>https://raw.githubusercontent.com/boonwin/AutoChessOverlay/master/AutoChessOverlay/publish/</InstallUrl>
+    <UpdateUrl>https://raw.githubusercontent.com/boonwin/AutoChessOverlay/master/AutoChessOverlay/publish/</UpdateUrl>
     <SupportUrl>http://boonwin.de</SupportUrl>
     <TargetCulture>en</TargetCulture>
     <ProductName>Boonwins Autobattler Overlay</ProductName>
@@ -36,7 +36,7 @@
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>11</ApplicationRevision>
+    <ApplicationRevision>13</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
