@@ -11,7 +11,7 @@
         <Image Height="343" Margin="10,10,0,0" VerticalAlignment="Top" Source="/BoonwinsAutobattlerStreamOverlay;component/Skins/Base/skin.png" HorizontalAlignment="Left" Width="270" />
         <Button x:Name="btnIceSkin" Content="Ice Theme" HorizontalAlignment="Left" Margin="428,372,0,0" VerticalAlignment="Top" Width="75" Click="btnIceSkin_Click"/>
         <Image Height="343" Margin="323,10,0,0" VerticalAlignment="Top" Source="/BoonwinsAutobattlerStreamOverlay;component/Skins/Ice/skin.png" HorizontalAlignment="Left" Width="270" />
-        <Button x:Name="btnHsSkin" Content="HS Theme" HorizontalAlignment="Left" Margin="742,372,0,0" VerticalAlignment="Top" Width="75" Click="btnHsSkin_Click"/>
+        <Button x:Name="btnIceSkin_Copy" Content="HS Theme" HorizontalAlignment="Left" Margin="742,372,0,0" VerticalAlignment="Top" Width="75" Click="btnIceSkin_Click"/>
         <Image Height="343" Margin="637,10,0,0" VerticalAlignment="Top" Source="/BoonwinsAutobattlerStreamOverlay;component/Skins/Ice/skin.png" HorizontalAlignment="Left" Width="270" />
 
     </Grid>
