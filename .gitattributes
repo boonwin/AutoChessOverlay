@@ -35,6 +35,10 @@
 #*.sqlproj   merge=binary
 #*.wwaproj   merge=binary
 
+*.manifest binary
+*.application binary
+*.deploy binary
+
 ###############################################################################
 # behavior for image files
 #

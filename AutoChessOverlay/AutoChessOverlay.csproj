@@ -20,20 +20,23 @@
     <Install>true</Install>
     <InstallFrom>Web</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
-    <UpdateMode>Background</UpdateMode>
+    <UpdateMode>Foreground</UpdateMode>
     <UpdateInterval>7</UpdateInterval>
     <UpdateIntervalUnits>Days</UpdateIntervalUnits>
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>true</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>http://boonwin.epizy.com/Downloads/</InstallUrl>
+    <InstallUrl>https://raw.githubusercontent.com/boonwin/AutoChessOverlay/master/AutoChessOverlay/AutoChessOverlay/publish/</InstallUrl>
+    <UpdateUrl>https://raw.githubusercontent.com/boonwin/AutoChessOverlay/master/AutoChessOverlay/AutoChessOverlay/publish/</UpdateUrl>
     <SupportUrl>http://boonwin.de</SupportUrl>
     <TargetCulture>en</TargetCulture>
     <ProductName>Boonwins Autobattler Overlay</ProductName>
     <PublisherName>Boonwin</PublisherName>
     <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>9</ApplicationRevision>
+    <ApplicationRevision>11</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
