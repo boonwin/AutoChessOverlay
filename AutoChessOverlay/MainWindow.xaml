@@ -31,7 +31,7 @@
         <Label x:Name="lbRank6" Content="0x" HorizontalAlignment="Left" Margin="136,203,0,0" VerticalAlignment="Top" Height="25" Width="59" HorizontalContentAlignment="Center" FontSize="14" FontFamily="Arial" FontStyle="Italic" FontWeight="Bold" BorderThickness="0"/>
         <Label x:Name="lbRank7" Content="0x" HorizontalAlignment="Left" Margin="136,233,0,0" VerticalAlignment="Top" Height="25" Width="59" HorizontalContentAlignment="Center" FontSize="14" FontFamily="Arial" FontStyle="Italic" FontWeight="Bold" BorderThickness="0"/>
         <Label x:Name="lbRank8" Content="0x" HorizontalAlignment="Left" Margin="136,265,0,0" VerticalAlignment="Top" Height="25" Width="59" HorizontalContentAlignment="Center" FontSize="14" FontFamily="Arial" FontStyle="Italic" FontWeight="Bold" BorderThickness="0"/>
-        <Image x:Name="img1st" HorizontalAlignment="Left" Height="40" Margin="0,36,0,0" VerticalAlignment="Top" Width="89" Source="Skins/Base/1st.png"/>
+        <Image x:Name="img1st" HorizontalAlignment="Left" Height="40" Margin="0,36,0,0" VerticalAlignment="Top" Width="90" Source="Skins/Base/1st.png"/>
         <Image x:Name="img2nd" HorizontalAlignment="Left" Height="25" Margin="24,80,0,0" VerticalAlignment="Top" Width="50" Source="Skins/Base/2nd.png"/>
         <Image x:Name="img3rd" HorizontalAlignment="Left" Height="25" Margin="27,110,0,0" VerticalAlignment="Top" Width="50" Source="Skins/Base/3rd.png"/>
         <Image x:Name="img4th" HorizontalAlignment="Left" Height="25" Margin="32,140,0,0" VerticalAlignment="Top" Width="50" Source="Skins/Base/4th.png"/>
