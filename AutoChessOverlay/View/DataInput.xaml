@@ -21,7 +21,7 @@
             </Menu>
         </DockPanel>
         <ComboBox x:Name="cbGame" HorizontalAlignment="Left" Margin="18,39,0,0" VerticalAlignment="Top" Width="116" IsEditable="True"  IsReadOnly="True" Text="-- Select Game --" DataContext="{StaticResource Games}" ItemsSource="{Binding GameNames}" SelectionChanged="cbGame_SelectionChanged"  />
-        <ComboBox x:Name="cbHero" HorizontalAlignment="Left" Margin="161,39,0,0" VerticalAlignment="Top" Width="116" IsEditable="True"  IsReadOnly="True" Text="-- Select Hero --" ItemsSource="{Binding Names}" />
+        <ComboBox x:Name="cbHero" HorizontalAlignment="Left" Margin="161,39,0,0" VerticalAlignment="Top" Width="116" IsEditable="True"  IsReadOnly="True" Text="-- Select Hero --" ItemsSource="{Binding Names}" IsEnabled="False" Visibility="Hidden"/>
 
         <Button x:Name="btnEnterData" Content="History" HorizontalAlignment="Left" Margin="88,392,0,0" VerticalAlignment="Top" Width="141" Height="28" Click="btnEnterData_Click"  />
 
