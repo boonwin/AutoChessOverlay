@@ -12,6 +12,9 @@
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
+# Click-Once directory and setup.exe
+!publish/
+!setup.exe
 
 # Build results
 [Dd]ebug/
@@ -164,8 +167,6 @@ DocProject/Help/*.hhp
 DocProject/Help/Html2
 DocProject/Help/html
 
-# Click-Once directory
-!publish/
 
 # Publish Web Output
 *.[Pp]ublish.xml
