@@ -24,14 +24,29 @@ namespace AutoChessOverlay
     /// </summary>
     public partial class MainWindow : Window
     {
-
-         public MainWindow()
+        
+        public MainWindow()
         {
             InitializeComponent();
             var data = new DataInput(this);   
             data.Show();
             var filePath = new FilePathes();
             Directory.CreateDirectory(filePath.writePath);
+            if (File.Exists(filePath.skinConfigPath))
+            {
+                var skins = new Skins(this);            
+                var skin = File.ReadAllText(filePath.skinConfigPath);
+                if(skin == "Base") {
+                    skins.changeToBaseSkin();
+                }
+                if (skin == "Ice") {
+                    skins.changeToIceSkin();
+                }
+                if (skin == "Hs") {
+                    skins.changeToHsSkin();
+                }
+            }
+
         }
 
         private void btRankTitle_Click(object sender, RoutedEventArgs e)
