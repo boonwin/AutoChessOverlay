@@ -24,7 +24,7 @@
     <UpdateInterval>7</UpdateInterval>
     <UpdateIntervalUnits>Days</UpdateIntervalUnits>
     <UpdatePeriodically>false</UpdatePeriodically>
-    <UpdateRequired>false</UpdateRequired>
+    <UpdateRequired>true</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <InstallUrl>https://raw.githubusercontent.com/boonwin/AutoChessOverlay/master/AutoChessOverlay/publish/</InstallUrl>
     <UpdateUrl>https://raw.githubusercontent.com/boonwin/AutoChessOverlay/master/AutoChessOverlay/publish/</UpdateUrl>
@@ -32,12 +32,13 @@
     <TargetCulture>en</TargetCulture>
     <ProductName>Boonwins Autobattler Overlay</ProductName>
     <PublisherName>Boonwin</PublisherName>
+    <SuiteName>Boonwins Autobattler Overlay</SuiteName>
     <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>11</ApplicationRevision>
-    <ApplicationVersion>1.0.1.%2a</ApplicationVersion>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.2.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -79,14 +80,14 @@
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup>
-    <ManifestCertificateThumbprint>C91F2E5E301FCC06D26EC2B0E4D48FA8A4E4EBED</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>5B7CFC4BD704E12C92FE555768A281AF6DD57F7D</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>AutoChessOverlay_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>boonwincert.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>AutoChessOverlay_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>boonwin.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
@@ -182,7 +183,8 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="AutoChessOverlay_TemporaryKey.pfx" />
+    <None Include="boonwin.pfx" />
+    <None Include="boonwincert.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
@@ -252,6 +254,9 @@
     <Resource Include="Skins\Hs\6th.png" />
     <Resource Include="Skins\Hs\7th.png" />
     <Resource Include="Skins\Hs\8th.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Skins\Hs\skin.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

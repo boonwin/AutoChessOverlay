@@ -95,8 +95,9 @@ namespace AutoChessOverlay.View
             _mainWindow.img8th.Source = new BitmapImage(new Uri("pack://application:,,,/BoonwinsAutobattlerStreamOverlay;component/Skins/Ice/8th.png"));
             _mainWindow.tbAvgRankText.Foreground = Brushes.LightSkyBlue;
             _mainWindow.tbAvgRankText.FontFamily = new FontFamily("Ice kingdom");
+            _mainWindow.tbAvgRankText.FontSize = 20;
 
-            _mainWindow.lbRank1.Foreground = Brushes.White;
+           _mainWindow.lbRank1.Foreground = Brushes.White;
             _mainWindow.lbRank2.Foreground = Brushes.White;
             _mainWindow.lbRank3.Foreground = Brushes.White;
             _mainWindow.lbRank4.Foreground = Brushes.White;
@@ -133,6 +134,62 @@ namespace AutoChessOverlay.View
             _mainWindow.pbRank6.Background = Brushes.SteelBlue;
             _mainWindow.pbRank7.Background = Brushes.SteelBlue;
             _mainWindow.pbRank8.Background = Brushes.SteelBlue;
+        }
+
+       
+
+        private void btnHsSkin_Click(object sender, RoutedEventArgs e)
+        {
+            _mainWindow.btRankTitle.Foreground = Brushes.Gold;
+            _mainWindow.btRankTitle.FontFamily = new FontFamily("LHF Uncial Caps");
+            _mainWindow.img1st.Source = new BitmapImage(new Uri("pack://application:,,,/BoonwinsAutobattlerStreamOverlay;component/Skins/Hs/1st.png"));
+            _mainWindow.img2nd.Source = new BitmapImage(new Uri("pack://application:,,,/BoonwinsAutobattlerStreamOverlay;component/Skins/Hs/2nd.png"));
+            _mainWindow.img3rd.Source = new BitmapImage(new Uri("pack://application:,,,/BoonwinsAutobattlerStreamOverlay;component/Skins/Hs/3rd.png"));
+            _mainWindow.img4th.Source = new BitmapImage(new Uri("pack://application:,,,/BoonwinsAutobattlerStreamOverlay;component/Skins/Hs/4th.png"));
+            _mainWindow.img5th.Source = new BitmapImage(new Uri("pack://application:,,,/BoonwinsAutobattlerStreamOverlay;component/Skins/Hs/5th.png"));
+            _mainWindow.img6th.Source = new BitmapImage(new Uri("pack://application:,,,/BoonwinsAutobattlerStreamOverlay;component/Skins/Hs/6th.png"));
+            _mainWindow.img7th.Source = new BitmapImage(new Uri("pack://application:,,,/BoonwinsAutobattlerStreamOverlay;component/Skins/Hs/7th.png"));
+            _mainWindow.img8th.Source = new BitmapImage(new Uri("pack://application:,,,/BoonwinsAutobattlerStreamOverlay;component/Skins/Hs/8th.png"));
+            _mainWindow.tbAvgRankText.Foreground = Brushes.Gold;
+            _mainWindow.tbAvgRankText.FontFamily = new FontFamily("LHF Uncial Caps");
+
+            _mainWindow.lbRank1.Foreground = Brushes.Black;
+            _mainWindow.lbRank2.Foreground = Brushes.Black;
+            _mainWindow.lbRank3.Foreground = Brushes.Black;
+            _mainWindow.lbRank4.Foreground = Brushes.Black;
+            _mainWindow.lbRank5.Foreground = Brushes.Black;
+            _mainWindow.lbRank6.Foreground = Brushes.Black;
+            _mainWindow.lbRank7.Foreground = Brushes.Black;
+            _mainWindow.lbRank8.Foreground = Brushes.Black;
+
+
+            _mainWindow.lbRank1.FontFamily = new FontFamily("LHF Uncial Caps");
+            _mainWindow.lbRank2.FontFamily = new FontFamily("LHF Uncial Caps");
+            _mainWindow.lbRank3.FontFamily = new FontFamily("LHF Uncial Caps");
+            _mainWindow.lbRank4.FontFamily = new FontFamily("LHF Uncial Caps");
+            _mainWindow.lbRank5.FontFamily = new FontFamily("LHF Uncial Caps");
+            _mainWindow.lbRank6.FontFamily = new FontFamily("LHF Uncial Caps");
+            _mainWindow.lbRank7.FontFamily = new FontFamily("LHF Uncial Caps");
+            _mainWindow.lbRank8.FontFamily = new FontFamily("LHF Uncial Caps");
+
+
+            _mainWindow.pbRank1.Foreground = Brushes.Gold;
+            _mainWindow.pbRank2.Foreground = Brushes.Gold;
+            _mainWindow.pbRank3.Foreground = Brushes.Gold;
+            _mainWindow.pbRank4.Foreground = Brushes.Gold;
+            _mainWindow.pbRank5.Foreground = Brushes.Gold;
+            _mainWindow.pbRank6.Foreground = Brushes.Gold;
+            _mainWindow.pbRank7.Foreground = Brushes.Gold;
+            _mainWindow.pbRank8.Foreground = Brushes.Gold;
+
+            _mainWindow.pbRank1.Background = Brushes.GhostWhite;
+            _mainWindow.pbRank2.Background = Brushes.GhostWhite;
+            _mainWindow.pbRank3.Background = Brushes.GhostWhite;
+            _mainWindow.pbRank4.Background = Brushes.GhostWhite;
+            _mainWindow.pbRank5.Background = Brushes.GhostWhite;
+            _mainWindow.pbRank6.Background = Brushes.GhostWhite;
+            _mainWindow.pbRank7.Background = Brushes.GhostWhite;
+            _mainWindow.pbRank8.Background = Brushes.GhostWhite;
         }
     }
 }
