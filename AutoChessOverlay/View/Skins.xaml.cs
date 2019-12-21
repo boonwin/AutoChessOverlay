@@ -142,7 +142,7 @@ namespace AutoChessOverlay.View
 
         internal void changeToIceSkin()
         {
-            _mainWindow.btRankTitle.Foreground = Brushes.LightSkyBlue;
+            _mainWindow.btRankTitle.Foreground = Brushes.Snow;
             _mainWindow.btRankTitle.FontFamily = new FontFamily("Ice kingdom");
             _mainWindow.img1st.Source = new BitmapImage(new Uri("pack://application:,,,/BoonwinsAutobattlerStreamOverlay;component/Skins/Ice/1st.png"));
             _mainWindow.img2nd.Source = new BitmapImage(new Uri("pack://application:,,,/BoonwinsAutobattlerStreamOverlay;component/Skins/Ice/2nd.png"));
@@ -152,7 +152,7 @@ namespace AutoChessOverlay.View
             _mainWindow.img6th.Source = new BitmapImage(new Uri("pack://application:,,,/BoonwinsAutobattlerStreamOverlay;component/Skins/Ice/6th.png"));
             _mainWindow.img7th.Source = new BitmapImage(new Uri("pack://application:,,,/BoonwinsAutobattlerStreamOverlay;component/Skins/Ice/7th.png"));
             _mainWindow.img8th.Source = new BitmapImage(new Uri("pack://application:,,,/BoonwinsAutobattlerStreamOverlay;component/Skins/Ice/8th.png"));
-            _mainWindow.tbAvgRankText.Foreground = Brushes.LightSkyBlue;
+            _mainWindow.tbAvgRankText.Foreground = Brushes.Snow;
             _mainWindow.tbAvgRankText.FontFamily = new FontFamily("Ice kingdom");
             _mainWindow.tbAvgRankText.FontSize = 20;
 
