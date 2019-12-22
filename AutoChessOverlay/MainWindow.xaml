@@ -5,17 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AutoChessOverlay"
         mc:Ignorable="d"
-        Title="MainWindow" Height="400
-        " Width="300" ResizeMode="NoResize">
+        Title="MainWindow" Height="453" Width="300" ResizeMode="NoResize">
 
     <Grid Background="Magenta">
         <Grid.Resources>
             <ImageBrush x:Key="HeadLineBrush" ImageSource="/Icon/title.png"></ImageBrush>
         </Grid.Resources>
 
-        <Button x:Name="btRankTitle"  Content="Placements of the day" HorizontalAlignment="Left" Margin="1,0,0,328" Width="284" FontSize="22" FontFamily="Eras ITC" FontWeight="Bold" Foreground="Yellow" Background="Transparent" BorderBrush="Transparent" Click="btRankTitle_Click">
+        <Button x:Name="btRankTitle"  Content="Placements of the day" HorizontalAlignment="Left" Margin="1,0,0,0" Width="284" FontSize="22" FontFamily="Eras ITC" FontWeight="Bold" Foreground="Yellow" Background="Transparent" BorderBrush="Transparent" Click="btRankTitle_Click" Height="41" VerticalAlignment="Top">
             <Button.Effect>
-            <DropShadowEffect ShadowDepth="0"
+                <DropShadowEffect ShadowDepth="0"
                     Color="DarkBlue"
                     Opacity="1"
                     BlurRadius="5"/>
@@ -46,7 +45,7 @@
         <Image x:Name="img6th" HorizontalAlignment="Left" Height="25" Margin="31,202,0,0" VerticalAlignment="Top" Width="50" Source="Skins/Base/6th.png"/>
         <Image x:Name="img7th" HorizontalAlignment="Left" Height="25" Margin="30,233,0,0" VerticalAlignment="Top" Width="50" Source="Skins/Base/7th.png"/>
         <Image x:Name="img8th" HorizontalAlignment="Left" Height="25" Margin="31,264,0,0" VerticalAlignment="Top" Width="50" Source="Skins/Base/8th.png"/>
-        <Label x:Name="tbAvgRankText" Margin="11,305,9,10" Content="Average Rank: " HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Width="274" FontFamily="Eras ITC" FontSize="24" FontWeight="Bold" Foreground="Yellow" Background="Transparent">
+        <Label x:Name="tbAvgRankText" Margin="11,305,9,66" Content="Average Rank: " HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Width="274" FontFamily="Eras ITC" FontSize="24" FontWeight="Bold" Foreground="Yellow" Background="Transparent">
             <Label.Effect>
                 <DropShadowEffect ShadowDepth="0"
                     Color="DarkBlue"
@@ -54,6 +53,21 @@
                     BlurRadius="5"/>
             </Label.Effect>
         </Label>
-
+        <Label x:Name="tbMmrText" Margin="29,348,140,23" Content="MMR: " HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Eras ITC" FontSize="24" FontWeight="Bold" Foreground="Yellow" Background="Transparent">
+            <Label.Effect>
+                <DropShadowEffect ShadowDepth="0"
+                    Color="DarkBlue"
+                    Opacity="1"
+                    BlurRadius="5"/>
+            </Label.Effect>
+        </Label>
+        <Label x:Name="tbMmrValueText" Margin="92,348,10,23" Content="0 " HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Eras ITC" FontSize="24" FontWeight="Bold" Foreground="Yellow" Background="Transparent">
+            <Label.Effect>
+                <DropShadowEffect ShadowDepth="0"
+                    Color="DarkBlue"
+                    Opacity="1"
+                    BlurRadius="5"/>
+            </Label.Effect>
+        </Label>
     </Grid>
 </Window>

@@ -348,5 +348,10 @@ namespace AutoChessOverlay.View
             tbRank8Amount.Text = rank.rank8Amount.ToString();
             _mainWindow.SetTextBoxValue(rank);
         }
+
+        private void tbMmr_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            _mainWindow.tbMmrValueText.Content = tbMmr.Text;
+        }
     }
 }

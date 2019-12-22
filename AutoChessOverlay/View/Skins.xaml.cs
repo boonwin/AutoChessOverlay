@@ -43,6 +43,11 @@ namespace AutoChessOverlay.View
             _mainWindow.tbAvgRankText.Foreground = Brushes.Gold;
             _mainWindow.tbAvgRankText.FontFamily = new FontFamily("LHF Uncial Caps");
 
+            _mainWindow.tbMmrText.Foreground = Brushes.Gold;
+            _mainWindow.tbMmrText.FontFamily = new FontFamily("LHF Uncial Caps");
+            _mainWindow.tbMmrValueText.Foreground = Brushes.Gold;
+            _mainWindow.tbMmrValueText.FontFamily = new FontFamily("LHF Uncial Caps");
+
             _mainWindow.lbRank1.Foreground = Brushes.Black;
             _mainWindow.lbRank2.Foreground = Brushes.Black;
             _mainWindow.lbRank3.Foreground = Brushes.Black;
@@ -101,6 +106,11 @@ namespace AutoChessOverlay.View
             _mainWindow.tbAvgRankText.Foreground = Brushes.Yellow;
             _mainWindow.tbAvgRankText.FontFamily = new FontFamily("Eras ITC");
 
+            _mainWindow.tbMmrText.Foreground = Brushes.Yellow;
+            _mainWindow.tbMmrText.FontFamily = new FontFamily("Eras ITC");
+            _mainWindow.tbMmrValueText.Foreground = Brushes.Yellow;
+            _mainWindow.tbMmrValueText.FontFamily = new FontFamily("Eras ITC");
+
             _mainWindow.lbRank1.Foreground = Brushes.Black;
             _mainWindow.lbRank2.Foreground = Brushes.Black;
             _mainWindow.lbRank3.Foreground = Brushes.Black;
@@ -154,7 +164,12 @@ namespace AutoChessOverlay.View
             _mainWindow.img8th.Source = new BitmapImage(new Uri("pack://application:,,,/BoonwinsAutobattlerStreamOverlay;component/Skins/Ice/8th.png"));
             _mainWindow.tbAvgRankText.Foreground = Brushes.Snow;
             _mainWindow.tbAvgRankText.FontFamily = new FontFamily("Ice kingdom");
-            _mainWindow.tbAvgRankText.FontSize = 20;
+      
+
+            _mainWindow.tbMmrText.Foreground = Brushes.Snow;
+            _mainWindow.tbMmrText.FontFamily = new FontFamily("Ice kingdom");
+            _mainWindow.tbMmrValueText.Foreground = Brushes.Snow;
+            _mainWindow.tbMmrValueText.FontFamily = new FontFamily("Ice kingdom");
 
             _mainWindow.lbRank1.Foreground = Brushes.White;
             _mainWindow.lbRank2.Foreground = Brushes.White;

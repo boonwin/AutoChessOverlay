@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:AutoChessOverlay.View"
         xmlns:model="clr-namespace:AutoChessOverlay.Model"
         mc:Ignorable="d"
-        Title="DataInput" Height="482" Width="299.602">
+        Title="DataInput" Height="531" Width="299.602">
     <Window.Resources>
         <model:Games x:Key="Games"/>
         <model:HsBattlegroundsHeroes x:Key="HsBattlegroundsHeroes"/>
@@ -23,7 +23,7 @@
         <ComboBox x:Name="cbGame" HorizontalAlignment="Left" Margin="18,39,0,0" VerticalAlignment="Top" Width="116" IsEditable="True"  IsReadOnly="True" Text="-- Select Game --" DataContext="{StaticResource Games}" ItemsSource="{Binding GameNames}" SelectionChanged="cbGame_SelectionChanged"  />
         <ComboBox x:Name="cbHero" HorizontalAlignment="Left" Margin="161,39,0,0" VerticalAlignment="Top" Width="116" IsEditable="True"  IsReadOnly="True" Text="-- Select Hero --" ItemsSource="{Binding Names}" IsEnabled="False" Visibility="Hidden"/>
 
-        <Button x:Name="btnEnterData" Content="History" HorizontalAlignment="Left" Margin="88,392,0,0" VerticalAlignment="Top" Width="141" Height="28" Click="btnEnterData_Click"  />
+        <Button x:Name="btnEnterData" Content="History" HorizontalAlignment="Left" Margin="88,452,0,0" VerticalAlignment="Top" Width="141" Height="28" Click="btnEnterData_Click"  />
 
         <TextBox x:Name="tbRank1Amount" HorizontalAlignment="Left" Height="32" Margin="88,71,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" TextAlignment="Left" Width="100" FontSize="16" Background="LightGray" IsEnabled="False"/>
         <Button x:Name="btnr1plus1" Content="+1" HorizontalAlignment="Left" Margin="193,71,0,0" VerticalAlignment="Top" Width="36" Height="31" Click="btnr1plus1_Click" MouseRightButtonUp="btnr1plus1_MouseRightButtonUp"/>
@@ -56,6 +56,8 @@
         <TextBox x:Name="tbRank8Amount" HorizontalAlignment="Left" Height="32" Margin="88,344,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" TextAlignment="Left" Width="100" FontSize="16" Background="LightGray" IsEnabled="False"/>
         <Button x:Name="btnr8plus1" Content="+1" HorizontalAlignment="Left" Margin="193,345,0,0" VerticalAlignment="Top" Width="36" Height="31" Click="btnr8plus1_Click" MouseRightButtonUp="btnr8plus1_MouseRightButtonUp"/>
         <Label Content="8th" HorizontalAlignment="Left" Margin="33,342,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox x:Name="tbMmr" HorizontalAlignment="Left" Height="32" Margin="88,383,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" TextAlignment="Left" Width="141" FontSize="16" Background="LightGray" IsEnabled="true" TextChanged="tbMmr_TextChanged"/>
+        <Label Content="MMR:" HorizontalAlignment="Left" Margin="33,381,0,0" VerticalAlignment="Top" FontSize="18"/>
 
     </Grid>
 </Window>
