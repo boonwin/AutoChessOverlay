@@ -6,16 +6,25 @@
         xmlns:local="clr-namespace:AutoChessOverlay"
         mc:Ignorable="d"
         Title="MainWindow" Height="453" Width="300" ResizeMode="NoResize"  WindowStyle="None" MouseDown="Window_MouseDown">
+
     <Window.Background>
         <SolidColorBrush Color="White" Opacity="0.0"></SolidColorBrush>
     </Window.Background>
 
+    
     <Grid Background="Magenta">
         <Grid.Resources>
             <ImageBrush x:Key="HeadLineBrush" ImageSource="/Icon/title.png"></ImageBrush>
         </Grid.Resources>
 
-        <Label x:Name="btRankTitle"  Content="Placements of the day" Margin="0,0,-3,0" FontSize="22" FontFamily="Eras ITC" FontWeight="Bold" Foreground="Yellow" Background="Transparent" BorderBrush="Transparent" Height="41" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+        <Label x:Name="btRankTitle"  Content="Placements of the day" Margin="0,0,-3,0" FontSize="22" FontFamily="Eras ITC" FontWeight="Bold" Foreground="Yellow" Background="Transparent" BorderBrush="Transparent" Height="41" VerticalAlignment="Top" HorizontalAlignment="Center">
+            <Label.Effect>
+                <DropShadowEffect ShadowDepth="0"
+                    Color="DarkBlue"
+                    Opacity="1"
+                    BlurRadius="5"/>
+            </Label.Effect>
+        </Label>
 
 
 

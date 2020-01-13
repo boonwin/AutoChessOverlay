@@ -20,6 +20,7 @@
                     <MenuItem Header="_Reset Stats" Click="mnuResetStats_Click" />
                     <MenuItem Header="_Themes" Click="mnuThemes_Click" />
                 </MenuItem>
+                <MenuItem Header="_Exit" Click="mnuExit_Click" />
             </Menu>
         </DockPanel>
         <ComboBox x:Name="cbGame" HorizontalAlignment="Left" Margin="18,39,0,0" VerticalAlignment="Top" Width="116" IsEditable="True"  IsReadOnly="True" Text="-- Select Game --" DataContext="{StaticResource Games}" ItemsSource="{Binding GameNames}" SelectionChanged="cbGame_SelectionChanged"  />
