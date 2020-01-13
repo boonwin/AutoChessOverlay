@@ -133,6 +133,7 @@
     <Compile Include="View\Skins.xaml.cs">
       <DependentUpon>Skins.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\WindowBehavior.cs" />
     <Page Include="View\DataInput.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

@@ -5,6 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AutoChessOverlay.View"
         xmlns:model="clr-namespace:AutoChessOverlay.Model"
+        ResizeMode="NoResize"
+        local:WindowBehavior.HideCloseButton="True"
         mc:Ignorable="d"
         Title="DataInput" Height="531" Width="299.602">
     <Window.Resources>
