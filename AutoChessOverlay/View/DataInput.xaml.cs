@@ -32,6 +32,9 @@ namespace AutoChessOverlay.View
             _mainWindow = mainWindow;
             InitializeComponent();
 
+            var filePath = new FilePathes();
+            DataContext = new HsBattlegroundsHeroes();
+            gameFilePath = filePath.gameResultPath;
         }
 
 
@@ -40,6 +43,8 @@ namespace AutoChessOverlay.View
 
         private void btnEnterData_Click(object sender, RoutedEventArgs e)
         {
+        
+
             if (String.IsNullOrEmpty(gameFilePath) == true)
             {
                 MessageBox.Show("Please choose a Game", "Boonwins Autobattler Overlay", MessageBoxButton.OK, MessageBoxImage.Exclamation);
@@ -357,10 +362,23 @@ namespace AutoChessOverlay.View
             _mainWindow.tbMmrValueText.Content = tbMmr.Text;
         }
 
+        private void tbMmrNow_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            _mainWindow.tbMmrNowValueText.Content = tbMmrNow.Text;
+        }
 
         private void mnuExit_Click(object sender, RoutedEventArgs e)
         {
             App.Current.Shutdown();
+        }
+
+        private void cbAllMmrActive_Checked(object sender, RoutedEventArgs e)
+        {
+            _mainWindow.ShowMMR();
+        }
+        private void cbAllMmrActive_Unchecked(object sender, RoutedEventArgs e)
+        {
+            _mainWindow.HideMMR();
         }
     }
 }

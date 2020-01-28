@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="BoonwinsAutobattlerStreamOverlay.exe" version="1.0.2.10" publicKeyToken="85dc7a857df9aadc" language="en" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="yoBBTVEmote.ico" asmv2:publisher="Boonwin" co.v1:suiteName="Boonwins Autobattler Overlay" asmv2:product="Boonwins Autobattler Overlay" asmv2:supportUrl="http://boonwin.de/" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="BoonwinsAutobattlerStreamOverlay" version="1.0.0.1" publicKeyToken="72C83E49BEB947E6" language="neutral" processorArchitecture="x86" />
+    <commandLine file="BoonwinsAutobattlerStreamOverlay.exe" parameters="" />
+  </entryPoint>
+  <co.v1:useManifestForTrust xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="Internet" Description="Default rights given to Internet applications" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC-Manifestoptionen
+             Wenn Sie die Ebene der Benutzerkontensteuerung für Windows ändern möchten, ersetzen Sie den 
+             Knoten "requestedExecutionLevel" wie folgt.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Durch Angabe des Elements "requestedExecutionLevel" wird die Datei- und Registrierungsvirtualisierung deaktiviert. 
+            Entfernen Sie dieses Element, wenn diese Virtualisierung aus Gründen der Abwärtskompatibilität
+            für die Anwendung erforderlich ist.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BoonwinsAutobattlerStreamOverlay.exe" size="758488">
+      <assemblyIdentity name="BoonwinsAutobattlerStreamOverlay" version="1.0.0.1" publicKeyToken="72C83E49BEB947E6" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>88hCFdVSprsLXKJU/dcmzP1bX6vpKnX/Sa89UrNUs5g=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LiveCharts.dll" size="152064">
+      <assemblyIdentity name="LiveCharts" version="0.9.7.0" publicKeyToken="0BC1F845D1EBB8DF" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>n8+Jg3tg9pwcUB5M+k0oYIh6/QuPMlgDNn55Wk47yco=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LiveCharts.Wpf.dll" size="217600">
+      <assemblyIdentity name="LiveCharts.Wpf" version="0.9.7.0" publicKeyToken="0BC1F845D1EBB8DF" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>G9uxtcGlBlPlwmFh6bfAPtxRhyGm4Q6hgKhASdlnEGs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="BoonwinsAutobattlerStreamOverlay.exe.config" size="186">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>eSEJjkfolEEv39DK/g+IzGhJd0CZjqwXxowAEpBp2AM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="yoBBTVEmote.ico" size="152146">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>G9r6L9xiF3d1RL8AUNs2PLCDRKyzm0z+YMFgYiHLpQg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- Eine Liste der Windows-Versionen, unter denen diese Anwendung getestet
+           und für die sie entwickelt wurde. Wenn Sie die Auskommentierung der entsprechenden Elemente aufheben,
+           wird von Windows automatisch die kompatibelste Umgebung ausgewählt. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=Boonwin" issuerKeyHash="40b3d2f58432326e06c633cdeb073edd0dbacb28" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>XEY2AUzRX/gFshSgHgAmTWb+Yto=</DigestValue></Reference></SignedInfo><SignatureValue>UCtQwlFAfXog8svR3KVAgLX1GJlGtYfszbePTCcIus9IXVt4x+V4Zi13vw/MqMtUOU70XZ7jTk8nCLZb0FgC+CKqPGKfieCHR/ZSFPy9V2cuANTymiTqgPkKYbkS5kRiBoEMFK4V3aGaQ+A7UdTUYQCDVPEBu66gAnmXuh6PyVYH2clMtUis1V91/mJD0VrsL1rCKBTCZh1OSFOBL85F9RhIaOkZRTGJf/tknKX8G2z/i11tfqEPC0AKrRSFxnWFRP9XwJagJVKqubYYlppMyIO3iGuGz0OeqU1TAOXlVopC8Tj/G4y+3yC0pmxdAh517bj6b7f/unv0ttiAETU7Rg==</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>tC9Xq7HXCYkCy7LvNzatUikdIcMth3EIBG7NQklvzLX2pG46bXrUik88QfbWwMSlt9EqyneNauZifu2TrmgYiDodzpG/KMcrPIWZCDhH0zr9OQFQfGlO+6Q0mNMgZbC1CCX+XGv9UgdMEWbrMfR5xVEtDcim4Op8vLOajxH82xBo1jqhnpW6jblYVZTU8n5J59XMMJahfkkHgqfqo5pDcDjr3u2fYewRGwF9TnEkFYQfOM8ZIIKfoTvRGQgo7Iz4gn3H3QYdyNW16rUgfkRNvu5rNXIEQIqBbIUXHSVpaGKpiknwFS4pMZa6y+WX/qPLfq+gIhz5WKzeB7C/4yLLUQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="da62fe664d26001ea014b205f85fd14c0136465c" Description="" Url=""><as:assemblyIdentity name="BoonwinsAutobattlerStreamOverlay.exe" version="1.0.2.10" publicKeyToken="85dc7a857df9aadc" language="en" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Boonwin</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>VKEXFBLDAf8pzzBPeA/CpyI4xTQ=</DigestValue></Reference></SignedInfo><SignatureValue>EuWXrUQ7HL1wHb3TGOUQCXGGPET7PKevjq2owKOB7ebXliOf/dPBjyVdlX3DTF3kJVXjCdc/bUGDDTnyiOtxS+j9I+ilq6BhtQLrJa0AyQI1NWjzSPZhH6pac/xe1H3qXmTJwaYwWTmztpiMybtR00I3nb7KELUPhwFXKC8AZuQ+mfwwwPdcaGSnmOpaGcJfXSmgE2QnJHuJWZcVUUNNmHmmqbXjGL6j1n73kr1o7yMp7X2IgRW/cDXwrhYJcnRtHqPbhzQ1+UPX/U4elQXm6LIINrSrs4SOkrq30wPOa2GsPXxYJDTzBx5L6i7bKb/2vO0Z4r+6rKVVeRqjGTj84g==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>tC9Xq7HXCYkCy7LvNzatUikdIcMth3EIBG7NQklvzLX2pG46bXrUik88QfbWwMSlt9EqyneNauZifu2TrmgYiDodzpG/KMcrPIWZCDhH0zr9OQFQfGlO+6Q0mNMgZbC1CCX+XGv9UgdMEWbrMfR5xVEtDcim4Op8vLOajxH82xBo1jqhnpW6jblYVZTU8n5J59XMMJahfkkHgqfqo5pDcDjr3u2fYewRGwF9TnEkFYQfOM8ZIIKfoTvRGQgo7Iz4gn3H3QYdyNW16rUgfkRNvu5rNXIEQIqBbIUXHSVpaGKpiknwFS4pMZa6y+WX/qPLfq+gIhz5WKzeB7C/4yLLUQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICrDCCAZSgAwIBAgIQGXDP4ZD0dKxGHjbb84UAyDANBgkqhkiG9w0BAQUFADASMRAwDgYDVQQDEwdCb29ud2luMB4XDTE5MTIyMDE2MDMzN1oXDTI5MTIyMTE2MDMzN1owEjEQMA4GA1UEAxMHQm9vbndpbjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALQvV6ux1wmJAsuy7zc2rVIpHSHDLYdxCARuzUJJb8y19qRuOm161IpPPEH21sDEpbfRKsp3jWrmYn7tk65oGIg6Hc6RvyjHKzyFmQg4R9M6/TkBUHxpTvukNJjTIGWwtQgl/lxr/VIHTBFm6zH0ecVRLQ3IpuDqfLyzmo8R/NsQaNY6oZ6Vuo25WFWU1PJ+SefVzDCWoX5JB4Kn6qOaQ3A4697tn2HsERsBfU5xJBWEHzjPGSCCn6E70RkIKOyM+IJ9x90GHcjVteq1IH5ETb7uazVyBECKgWyFFx0laWhiqYpJ8BUuKTGWusvll/6jy36voCIc+Vis3gewv+Miy1ECAwEAATANBgkqhkiG9w0BAQUFAAOCAQEAavcUOiogtVcw+nhDgaVDLS4miJAEtUctVxQYd2rtH/j/Pkp3iRpqc9BwMvaQ/tucqCIEFwE/td/Mq96AnK1Kf1c2ozN+YqLfEtRt/UJU3c5oq+ABzBuBvRr43FWKqjaferVpebFkK8jFg2h5CTLmMl8G14s3fMtwahNbeTTQus42wOZplhg2VrRP1VRfANrQXJXrSJBC2OMMOizYN3FC/z8X9X6Y5aOmTvLYdiNU3Z/RUaJp4yiTaIBgmMXJEt15WnfDP9gJSgmy7ugMmwvpVS2bw16B7ECJjgyaIu+y/Io5XEF8SrChEQlDmJYxAjBMeZNs35FZOOB5Gf8wqovhlQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

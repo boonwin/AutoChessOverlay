@@ -104,7 +104,21 @@ namespace AutoChessOverlay
            tbAvgRankText.Content = "Average Rank: " + SetAvgRankValue(rank);
         }
 
+        public void ShowMMR()
+        {
+            tbMmrNowText.Visibility = Visibility.Visible;
+            tbMmrNowValueText.Visibility = Visibility.Visible;
+            tbMmrText.Visibility = Visibility.Visible;
+            tbMmrValueText.Visibility = Visibility.Visible;
+        }
 
+        public void HideMMR()
+        {
+            tbMmrNowText.Visibility = Visibility.Hidden;
+            tbMmrNowValueText.Visibility = Visibility.Hidden;
+            tbMmrText.Visibility = Visibility.Hidden;
+            tbMmrValueText.Visibility = Visibility.Hidden;
+        }
 
         public string SetAvgRankValue(Ranks rank)
         {

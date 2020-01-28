@@ -48,6 +48,11 @@ namespace AutoChessOverlay.View
             _mainWindow.tbMmrValueText.Foreground = Brushes.Gold;
             _mainWindow.tbMmrValueText.FontFamily = new FontFamily("LHF Uncial Caps");
 
+            _mainWindow.tbMmrNowText.Foreground = Brushes.Gold;
+            _mainWindow.tbMmrNowText.FontFamily = new FontFamily("LHF Uncial Caps");
+            _mainWindow.tbMmrNowValueText.Foreground = Brushes.Gold;
+            _mainWindow.tbMmrNowValueText.FontFamily = new FontFamily("LHF Uncial Caps");
+
             _mainWindow.lbRank1.Foreground = Brushes.Black;
             _mainWindow.lbRank2.Foreground = Brushes.Black;
             _mainWindow.lbRank3.Foreground = Brushes.Black;
@@ -111,6 +116,11 @@ namespace AutoChessOverlay.View
             _mainWindow.tbMmrValueText.Foreground = Brushes.Yellow;
             _mainWindow.tbMmrValueText.FontFamily = new FontFamily("Eras ITC");
 
+            _mainWindow.tbMmrNowText.Foreground = Brushes.Yellow;
+            _mainWindow.tbMmrNowText.FontFamily = new FontFamily("Eras ITC");
+            _mainWindow.tbMmrNowValueText.Foreground = Brushes.Yellow;
+            _mainWindow.tbMmrNowValueText.FontFamily = new FontFamily("Eras ITC");
+
             _mainWindow.lbRank1.Foreground = Brushes.Black;
             _mainWindow.lbRank2.Foreground = Brushes.Black;
             _mainWindow.lbRank3.Foreground = Brushes.Black;
@@ -170,6 +180,11 @@ namespace AutoChessOverlay.View
             _mainWindow.tbMmrText.FontFamily = new FontFamily("Ice kingdom");
             _mainWindow.tbMmrValueText.Foreground = Brushes.Snow;
             _mainWindow.tbMmrValueText.FontFamily = new FontFamily("Ice kingdom");
+
+            _mainWindow.tbMmrNowText.Foreground = Brushes.Snow;
+            _mainWindow.tbMmrNowText.FontFamily = new FontFamily("Ice kingdom");
+            _mainWindow.tbMmrNowValueText.Foreground = Brushes.Snow;
+            _mainWindow.tbMmrNowValueText.FontFamily = new FontFamily("Ice kingdom");
 
             _mainWindow.lbRank1.Foreground = Brushes.White;
             _mainWindow.lbRank2.Foreground = Brushes.White;
