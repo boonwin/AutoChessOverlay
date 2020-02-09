@@ -37,7 +37,7 @@
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>11</ApplicationRevision>
+    <ApplicationRevision>12</ApplicationRevision>
     <ApplicationVersion>1.0.2.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -121,6 +121,7 @@
     <Compile Include="Model\FilePathes.cs" />
     <Compile Include="Model\Games.cs" />
     <Compile Include="Model\HsBattlegroundsHeroes.cs" />
+    <Compile Include="Model\Mmr.cs" />
     <Compile Include="Model\RankHistory.cs" />
     <Compile Include="Model\UnderlordsHeroes.cs" />
     <Compile Include="View\GameHistory.xaml.cs">

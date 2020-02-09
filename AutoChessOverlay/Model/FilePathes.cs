@@ -12,5 +12,8 @@ namespace AutoChessOverlay.Model
         public string gameResultPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\boonwin\data\gameresults.dat";
         public string underlordsGameResultPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\boonwin\data\ungameresults.dat";
         public string skinConfigPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\boonwin\data\skinConfig.dat";
+        public string mmrPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\boonwin\data\mmr.dat";
+
+
     }
 }

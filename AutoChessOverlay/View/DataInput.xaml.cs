@@ -369,6 +369,13 @@ namespace AutoChessOverlay.View
 
         private void mnuExit_Click(object sender, RoutedEventArgs e)
         {
+            if (!String.IsNullOrEmpty(tbMmrNow.Text)){
+                var file = new FilePathes();
+                if(Int32.Parse(tbMmrNow.Text) > 0)
+                {
+                    File.WriteAllText(file.mmrPath, tbMmrNow.Text);
+                }
+            }
             App.Current.Shutdown();
         }
 

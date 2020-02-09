@@ -46,6 +46,16 @@ namespace AutoChessOverlay
                     skins.changeToHsSkin();
                 }
             }
+            if (File.Exists(filePath.mmrPath))
+            {
+                ShowMMR();
+                data.cbAllMmrActive.IsChecked = true;
+                data.tbMmr.Text = File.ReadAllText(filePath.mmrPath);
+            } else
+            {
+                HideMMR();
+                data.cbAllMmrActive.IsChecked = false;
+            }
 
         }
 
