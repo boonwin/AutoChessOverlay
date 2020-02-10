@@ -14,8 +14,9 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using AutoChessOverlay.Model;
 using AutoChessOverlay.View;
+using AutoChessOverlay.Control;
 using System.IO;
-
+using System.Deployment.Application;
 
 namespace AutoChessOverlay
 {
@@ -27,8 +28,11 @@ namespace AutoChessOverlay
         
         public MainWindow()
         {
+        
+
             InitializeComponent();
-            var data = new DataInput(this);   
+            var data = new DataInput(this);
+            var changeLog = new ChangeLog(this);
             data.Show();
             var filePath = new FilePathes();
             Directory.CreateDirectory(filePath.writePath);
@@ -56,7 +60,16 @@ namespace AutoChessOverlay
                 HideMMR();
                 data.cbAllMmrActive.IsChecked = false;
             }
+            if (!File.Exists(filePath.changeLogPath))
+            {
+                File.WriteAllText(filePath.changeLogPath, "");
+            }
 
+            if (Versions.version != File.ReadAllText(filePath.changeLogPath))
+            {
+                changeLog.Show();
+            }
+    
         }
 
         private void btRankTitle_Click(object sender, RoutedEventArgs e)
