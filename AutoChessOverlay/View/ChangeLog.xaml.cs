@@ -31,8 +31,7 @@ namespace AutoChessOverlay.View
 
             _mainWindow = mainWindow;
             InitializeComponent();
-            tb_changeLog.Text = "In this Version I added a basic Changelog, that will be look more fancy in the future. \n " +
-                "I also will add soon a new blueish \"future\" Theme. \n" ;
+            tb_changeLog.Text = "I added the total game amount next to avg. rank \n" ;
 
         }
 

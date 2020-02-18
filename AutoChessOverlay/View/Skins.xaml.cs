@@ -42,6 +42,8 @@ namespace AutoChessOverlay.View
             _mainWindow.img8th.Source = new BitmapImage(new Uri("pack://application:,,,/BoonwinsAutobattlerStreamOverlay;component/Skins/Hs/8th.png"));
             _mainWindow.tbAvgRankText.Foreground = Brushes.Gold;
             _mainWindow.tbAvgRankText.FontFamily = new FontFamily("LHF Uncial Caps");
+            _mainWindow.tbTotalGames.Foreground = Brushes.Gold;
+            _mainWindow.tbTotalGames.FontFamily = new FontFamily("LHF Uncial Caps");
 
             _mainWindow.tbMmrText.Foreground = Brushes.Gold;
             _mainWindow.tbMmrText.FontFamily = new FontFamily("LHF Uncial Caps");
@@ -110,6 +112,8 @@ namespace AutoChessOverlay.View
             _mainWindow.img8th.Source = new BitmapImage(new Uri("pack://application:,,,/BoonwinsAutobattlerStreamOverlay;component/Skins/Base/8th.png"));
             _mainWindow.tbAvgRankText.Foreground = Brushes.Yellow;
             _mainWindow.tbAvgRankText.FontFamily = new FontFamily("Eras ITC");
+            _mainWindow.tbTotalGames.Foreground = Brushes.Yellow;
+            _mainWindow.tbTotalGames.FontFamily = new FontFamily("Eras ITC");
 
             _mainWindow.tbMmrText.Foreground = Brushes.Yellow;
             _mainWindow.tbMmrText.FontFamily = new FontFamily("Eras ITC");
@@ -174,7 +178,9 @@ namespace AutoChessOverlay.View
             _mainWindow.img8th.Source = new BitmapImage(new Uri("pack://application:,,,/BoonwinsAutobattlerStreamOverlay;component/Skins/Ice/8th.png"));
             _mainWindow.tbAvgRankText.Foreground = Brushes.Snow;
             _mainWindow.tbAvgRankText.FontFamily = new FontFamily("Ice kingdom");
-      
+            _mainWindow.tbTotalGames.Foreground = Brushes.Snow;
+            _mainWindow.tbTotalGames.FontFamily = new FontFamily("Ice kingdom");
+
 
             _mainWindow.tbMmrText.Foreground = Brushes.Snow;
             _mainWindow.tbMmrText.FontFamily = new FontFamily("Ice kingdom");

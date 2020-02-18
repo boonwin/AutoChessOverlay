@@ -8,6 +8,6 @@ namespace AutoChessOverlay.Control
 {
     public static class Versions
     {
-        public static string version = "2.2";
+        public static string version = "2.3";
     }
 }
