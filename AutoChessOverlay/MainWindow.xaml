@@ -93,7 +93,7 @@
                     BlurRadius="5"/>
             </Label.Effect>
         </Label>
-        <Label x:Name="tbTotalGames" Margin="10,290,34,0" Content="Games Total: " HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Eras ITC" FontSize="24" FontWeight="Bold" Foreground="Yellow" Background="Transparent" Height="46" VerticalAlignment="Top">
+        <Label x:Name="tbTotalGames" Margin="10,291,34,0" Content="Games Total: " HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Eras ITC" FontSize="24" FontWeight="Bold" Foreground="Yellow" Background="Transparent" Height="46" VerticalAlignment="Top">
             <Label.Effect>
                 <DropShadowEffect ShadowDepth="0"
                     Color="DarkBlue"
