@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AutoChessOverlay"
         mc:Ignorable="d"
-        Title="MainWindow" Height="453" Width="300" ResizeMode="NoResize"  WindowStyle="None" MouseDown="Window_MouseDown">
+        Title="MainWindow" Height="515" Width="300" ResizeMode="NoResize"  WindowStyle="None" MouseDown="Window_MouseDown">
 
     <Window.Background>
         <SolidColorBrush Color="White" Opacity="0.0"></SolidColorBrush>
     </Window.Background>
 
 
-    <Grid Background="Magenta" Margin="0,0,0,-36">
+    <Grid Background="Magenta">
         <Grid.Resources>
             <ImageBrush x:Key="HeadLineBrush" ImageSource="/Icon/title.png"></ImageBrush>
         </Grid.Resources>
