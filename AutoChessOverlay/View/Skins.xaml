@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AutoChessOverlay.View"
         mc:Ignorable="d"
-        Title="Themes" Height="437.812" Width="943.438" ResizeMode="NoResize" ShowInTaskbar="False">
+        Title="Themes" Height="836.953" Width="943.438" ResizeMode="NoResize" ShowInTaskbar="False">
     <Grid>
         <Button x:Name="btnBaseSkin" Content="Base Theme" HorizontalAlignment="Left" Margin="110,372,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-6,-0.6" Click="btnBaseSkin_Click"/>
         <Image Height="343" Margin="10,10,0,0" VerticalAlignment="Top" Source="/BoonwinsAutobattlerStreamOverlay;component/Skins/Base/skin.png" HorizontalAlignment="Left" Width="270" />
@@ -13,6 +13,8 @@
         <Image Height="343" Margin="323,10,0,0" VerticalAlignment="Top" Source="/BoonwinsAutobattlerStreamOverlay;component/Skins/Ice/skin.png" HorizontalAlignment="Left" Width="270" />
         <Button x:Name="btnHsSkin" Content="HS Theme" HorizontalAlignment="Left" Margin="742,372,0,0" VerticalAlignment="Top" Width="75" Click="btnHsSkin_Click" />
         <Image Height="343" Margin="637,10,0,0" VerticalAlignment="Top" Source="/BoonwinsAutobattlerStreamOverlay;component/Skins/Hs/skin.png" HorizontalAlignment="Left" Width="270" />
+        <Button x:Name="btnBeniceSkin" Content="Benice Theme" HorizontalAlignment="Left" Margin="87,767,0,0" VerticalAlignment="Top" Width="75" Click="btnBeniceSkin_Click" />
+        <Image Height="343" Margin="10,410,0,0" VerticalAlignment="Top" Source="/BoonwinsAutobattlerStreamOverlay;component/Skins/Benice/skin.png" HorizontalAlignment="Left" Width="270" />
 
     </Grid>
 </Window>

@@ -31,7 +31,7 @@ namespace AutoChessOverlay.View
 
             _mainWindow = mainWindow;
             InitializeComponent();
-            tb_changeLog.Text = "I added the total game amount next to avg. rank \n" ;
+            tb_changeLog.Text = "I added BeNice Theme :) Visit him at https://www.twitch.tv/benice92 \n";
 
         }
 

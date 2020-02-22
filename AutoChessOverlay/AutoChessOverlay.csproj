@@ -37,7 +37,7 @@
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>17</ApplicationRevision>
+    <ApplicationRevision>18</ApplicationRevision>
     <ApplicationVersion>1.0.2.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -224,7 +224,10 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Skins\Benice\FullTheme.png" />
+    <Resource Include="Skins\Benice\logo.png" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Skins\Base\2nd.png" />
     <Resource Include="Skins\Base\3rd.png" />
@@ -266,6 +269,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Skins\Hs\skin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Skins\Benice\skin.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

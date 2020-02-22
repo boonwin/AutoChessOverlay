@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AutoChessOverlay"
         mc:Ignorable="d"
-        Title="MainWindow" Height="515" Width="300" ResizeMode="NoResize"  WindowStyle="None" MouseDown="Window_MouseDown">
+        Title="MainWindow" Height="500" Width="300" ResizeMode="NoResize"  WindowStyle="None" MouseDown="Window_MouseDown">
 
     <Window.Background>
         <SolidColorBrush Color="White" Opacity="0.0"></SolidColorBrush>
@@ -52,7 +52,10 @@
         <Image x:Name="img6th" HorizontalAlignment="Left" Height="25" Margin="31,202,0,0" VerticalAlignment="Top" Width="50" Source="Skins/Base/6th.png"/>
         <Image x:Name="img7th" HorizontalAlignment="Left" Height="25" Margin="30,233,0,0" VerticalAlignment="Top" Width="50" Source="Skins/Base/7th.png"/>
         <Image x:Name="img8th" HorizontalAlignment="Left" Height="25" Margin="31,264,0,0" VerticalAlignment="Top" Width="50" Source="Skins/Base/8th.png"/>
-        <Label x:Name="tbAvgRankText" Margin="10,336,10,0" Content="Average Rank: " HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Eras ITC" FontSize="24" FontWeight="Bold" Foreground="Yellow" Background="Transparent" Height="54" VerticalAlignment="Top">
+
+        <Image x:Name="imgBg" HorizontalAlignment="Left" Height="500" Width="300" VerticalAlignment="Top"  Visibility="Hidden" Source="Skins/Benice/FullTheme.png"/>
+
+        <Label x:Name="tbAvgRankText" Margin="10,326,10,0" Content="Average Rank: " HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Eras ITC" FontSize="24" FontWeight="Bold" Foreground="Yellow" Background="Transparent" Height="40" VerticalAlignment="Top">
             <Label.Effect>
                 <DropShadowEffect ShadowDepth="0"
                     Color="DarkBlue"
@@ -60,7 +63,7 @@
                     BlurRadius="5"/>
             </Label.Effect>
         </Label>
-        <Label x:Name="tbMmrText" Margin="10,395,140,0" Content="MMR start: " HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Eras ITC" FontSize="24" FontWeight="Bold" Foreground="Yellow" Background="Transparent" Height="52" VerticalAlignment="Top">
+        <Label x:Name="tbMmrText" Margin="10,374,140,0" Content="MMR start: " HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Eras ITC" FontSize="24" FontWeight="Bold" Foreground="Yellow" Background="Transparent" Height="52" VerticalAlignment="Top">
             <Label.Effect>
                 <DropShadowEffect ShadowDepth="0"
                     Color="DarkBlue"
@@ -68,7 +71,7 @@
                     BlurRadius="5"/>
             </Label.Effect>
         </Label>
-        <Label x:Name="tbMmrValueText" Margin="92,405,0,0" Content="0 " HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Eras ITC" FontSize="24" FontWeight="Bold" Foreground="Yellow" Background="Transparent" Height="39" VerticalAlignment="Top">
+        <Label x:Name="tbMmrValueText" Margin="92,384,0,0" Content="0 " HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Eras ITC" FontSize="24" FontWeight="Bold" Foreground="Yellow" Background="Transparent" Height="39" VerticalAlignment="Top">
             <Label.Effect>
                 <DropShadowEffect ShadowDepth="0"
                     Color="DarkBlue"
@@ -77,7 +80,7 @@
             </Label.Effect>
         </Label>
 
-        <Label x:Name="tbMmrNowText" Margin="10,427,140,0" Content="MMR now: " HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Eras ITC" FontSize="24" FontWeight="Bold" Foreground="Yellow" Background="Transparent" Height="60" VerticalAlignment="Top">
+        <Label x:Name="tbMmrNowText" Margin="10,406,140,0" Content="MMR now: " HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Eras ITC" FontSize="24" FontWeight="Bold" Foreground="Yellow" Background="Transparent" Height="60" VerticalAlignment="Top">
             <Label.Effect>
                 <DropShadowEffect ShadowDepth="0"
                     Color="DarkBlue"
@@ -85,7 +88,7 @@
                     BlurRadius="5"/>
             </Label.Effect>
         </Label>
-        <Label x:Name="tbMmrNowValueText" Margin="92,438,0,0" Content="0 " HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Eras ITC" FontSize="24" FontWeight="Bold" Foreground="Yellow" Background="Transparent" Height="42" VerticalAlignment="Top">
+        <Label x:Name="tbMmrNowValueText" Margin="92,417,0,0" Content="0 " HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Eras ITC" FontSize="24" FontWeight="Bold" Foreground="Yellow" Background="Transparent" Height="42" VerticalAlignment="Top">
             <Label.Effect>
                 <DropShadowEffect ShadowDepth="0"
                     Color="DarkBlue"
@@ -93,7 +96,7 @@
                     BlurRadius="5"/>
             </Label.Effect>
         </Label>
-        <Label x:Name="tbTotalGames" Margin="10,291,34,0" Content="Games Total: " HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Eras ITC" FontSize="24" FontWeight="Bold" Foreground="Yellow" Background="Transparent" Height="46" VerticalAlignment="Top">
+        <Label x:Name="tbTotalGames" Margin="10,291,34,0" Content="Games Total: " HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Eras ITC" FontSize="24" FontWeight="Bold" Foreground="Yellow" Background="Transparent" Height="40" VerticalAlignment="Top">
             <Label.Effect>
                 <DropShadowEffect ShadowDepth="0"
                     Color="DarkBlue"
@@ -101,6 +104,11 @@
                     BlurRadius="5"/>
             </Label.Effect>
         </Label>
+        <Label x:Name="tbAvgRankSmallText" Margin="129,276,138,0" Content="0 " HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Franklin Gothic Demi Cond" FontSize="16" FontWeight="Bold" Foreground="Black" Background="Transparent" Height="39" VerticalAlignment="Top" FontStyle="Italic" Visibility="Hidden"/>
+
+
+        <Label x:Name="tbTotalGamesSmallText" Margin="170,276,97,0" Content="0 " HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Franklin Gothic Demi Cond" FontSize="16" FontWeight="Bold" Foreground="Black" Background="Transparent" Height="39" VerticalAlignment="Top" FontStyle="Italic" Visibility="Hidden" />
+
 
     </Grid>
 </Window>

@@ -30,6 +30,23 @@ namespace AutoChessOverlay.View
 
       public void changeToHsSkin()
         {
+
+            _mainWindow.btRankTitle.Visibility = Visibility.Visible;
+            _mainWindow.img1st.Visibility = Visibility.Visible;
+            _mainWindow.img2nd.Visibility = Visibility.Visible;
+            _mainWindow.img3rd.Visibility = Visibility.Visible;
+            _mainWindow.img4th.Visibility = Visibility.Visible;
+            _mainWindow.img5th.Visibility = Visibility.Visible;
+            _mainWindow.img6th.Visibility = Visibility.Visible;
+            _mainWindow.img7th.Visibility = Visibility.Visible;
+            _mainWindow.img8th.Visibility = Visibility.Visible;
+            _mainWindow.tbAvgRankText.Visibility = Visibility.Visible;
+            _mainWindow.tbTotalGames.Visibility = Visibility.Visible;
+
+            _mainWindow.imgBg.Visibility = Visibility.Hidden;
+            _mainWindow.tbAvgRankSmallText.Visibility = Visibility.Hidden;
+            _mainWindow.tbTotalGamesSmallText.Visibility = Visibility.Hidden;
+
             _mainWindow.btRankTitle.Foreground = Brushes.Gold;
             _mainWindow.btRankTitle.FontFamily = new FontFamily("LHF Uncial Caps");
             _mainWindow.img1st.Source = new BitmapImage(new Uri("pack://application:,,,/BoonwinsAutobattlerStreamOverlay;component/Skins/Hs/1st.png"));
@@ -100,6 +117,24 @@ namespace AutoChessOverlay.View
 
         internal void changeToBaseSkin()
         {
+
+            _mainWindow.btRankTitle.Visibility = Visibility.Visible;
+            _mainWindow.img1st.Visibility = Visibility.Visible;
+            _mainWindow.img2nd.Visibility = Visibility.Visible;
+            _mainWindow.img3rd.Visibility = Visibility.Visible;
+            _mainWindow.img4th.Visibility = Visibility.Visible;
+            _mainWindow.img5th.Visibility = Visibility.Visible;
+            _mainWindow.img6th.Visibility = Visibility.Visible;
+            _mainWindow.img7th.Visibility = Visibility.Visible;
+            _mainWindow.img8th.Visibility = Visibility.Visible;
+            _mainWindow.tbAvgRankText.Visibility = Visibility.Visible;
+            _mainWindow.tbTotalGames.Visibility = Visibility.Visible;
+
+            _mainWindow.imgBg.Visibility = Visibility.Hidden;
+            _mainWindow.tbAvgRankSmallText.Visibility = Visibility.Hidden;
+            _mainWindow.tbTotalGamesSmallText.Visibility = Visibility.Hidden;
+
+
             _mainWindow.btRankTitle.Foreground = Brushes.Yellow;
             _mainWindow.btRankTitle.FontFamily = new FontFamily("Eras ITC");
             _mainWindow.img1st.Source = new BitmapImage(new Uri("pack://application:,,,/BoonwinsAutobattlerStreamOverlay;component/Skins/Base/1st.png"));
@@ -166,6 +201,24 @@ namespace AutoChessOverlay.View
 
         internal void changeToIceSkin()
         {
+
+            _mainWindow.btRankTitle.Visibility = Visibility.Visible;
+            _mainWindow.img1st.Visibility = Visibility.Visible;
+            _mainWindow.img2nd.Visibility = Visibility.Visible;
+            _mainWindow.img3rd.Visibility = Visibility.Visible;
+            _mainWindow.img4th.Visibility = Visibility.Visible;
+            _mainWindow.img5th.Visibility = Visibility.Visible;
+            _mainWindow.img6th.Visibility = Visibility.Visible;
+            _mainWindow.img7th.Visibility = Visibility.Visible;
+            _mainWindow.img8th.Visibility = Visibility.Visible;
+            _mainWindow.tbAvgRankText.Visibility = Visibility.Visible;
+            _mainWindow.tbTotalGames.Visibility = Visibility.Visible;
+
+            _mainWindow.imgBg.Visibility = Visibility.Hidden;
+            _mainWindow.tbAvgRankSmallText.Visibility = Visibility.Hidden;
+            _mainWindow.tbTotalGamesSmallText.Visibility = Visibility.Hidden;
+
+
             _mainWindow.btRankTitle.Foreground = Brushes.Snow;
             _mainWindow.btRankTitle.FontFamily = new FontFamily("Ice kingdom");
             _mainWindow.img1st.Source = new BitmapImage(new Uri("pack://application:,,,/BoonwinsAutobattlerStreamOverlay;component/Skins/Ice/1st.png"));
@@ -232,6 +285,65 @@ namespace AutoChessOverlay.View
             setStandardSkin("Ice");
         }
 
+        internal void changeToBeniceSkin()
+        {
+            _mainWindow.btRankTitle.Visibility = Visibility.Hidden;
+            _mainWindow.img1st.Visibility = Visibility.Hidden;
+            _mainWindow.img2nd.Visibility = Visibility.Hidden;
+            _mainWindow.img3rd.Visibility = Visibility.Hidden;
+            _mainWindow.img4th.Visibility = Visibility.Hidden;
+            _mainWindow.img5th.Visibility = Visibility.Hidden;
+            _mainWindow.img6th.Visibility = Visibility.Hidden;
+            _mainWindow.img7th.Visibility = Visibility.Hidden;
+            _mainWindow.img8th.Visibility = Visibility.Hidden;
+            _mainWindow.tbAvgRankText.Visibility = Visibility.Hidden;
+            _mainWindow.tbTotalGames.Visibility = Visibility.Hidden;
+
+            _mainWindow.imgBg.Visibility = Visibility.Visible;
+            _mainWindow.tbAvgRankSmallText.Visibility = Visibility.Visible;
+            _mainWindow.tbTotalGamesSmallText.Visibility = Visibility.Visible;
+
+
+            _mainWindow.imgBg.Source = new BitmapImage(new Uri("pack://application:,,,/BoonwinsAutobattlerStreamOverlay;component/Skins/Benice/FullTheme.png"));
+
+            _mainWindow.tbAvgRankSmallText.Foreground = Brushes.Black;
+            _mainWindow.tbAvgRankSmallText.FontFamily = new FontFamily("Franklin Gothic Demi Cond");
+            _mainWindow.tbTotalGamesSmallText.Foreground = Brushes.Black;
+            _mainWindow.tbTotalGamesSmallText.FontFamily = new FontFamily("Franklin Gothic Demi Cond");
+
+
+            _mainWindow.tbMmrText.Foreground = Brushes.Black;
+            _mainWindow.tbMmrText.FontFamily = new FontFamily("Franklin Gothic Demi Cond");
+            _mainWindow.tbMmrValueText.Foreground = Brushes.Black;
+            _mainWindow.tbMmrValueText.FontFamily = new FontFamily("Franklin Gothic Demi Cond");
+
+            _mainWindow.tbMmrNowText.Foreground = Brushes.Black;
+            _mainWindow.tbMmrNowText.FontFamily = new FontFamily("Franklin Gothic Demi Cond");
+            _mainWindow.tbMmrNowValueText.Foreground = Brushes.Black;
+            _mainWindow.tbMmrNowValueText.FontFamily = new FontFamily("Franklin Gothic Demi Cond");
+
+            _mainWindow.pbRank1.Foreground = Brushes.LightSkyBlue;
+            _mainWindow.pbRank2.Foreground = Brushes.LightSkyBlue;
+            _mainWindow.pbRank3.Foreground = Brushes.LightSkyBlue;
+            _mainWindow.pbRank4.Foreground = Brushes.LightSkyBlue;
+            _mainWindow.pbRank5.Foreground = Brushes.LightSkyBlue;
+            _mainWindow.pbRank6.Foreground = Brushes.LightSkyBlue;
+            _mainWindow.pbRank7.Foreground = Brushes.LightSkyBlue;
+            _mainWindow.pbRank8.Foreground = Brushes.LightSkyBlue;
+
+            _mainWindow.pbRank1.Background = Brushes.SteelBlue;
+            _mainWindow.pbRank2.Background = Brushes.SteelBlue;
+            _mainWindow.pbRank3.Background = Brushes.SteelBlue;
+            _mainWindow.pbRank4.Background = Brushes.SteelBlue;
+            _mainWindow.pbRank5.Background = Brushes.SteelBlue;
+            _mainWindow.pbRank6.Background = Brushes.SteelBlue;
+            _mainWindow.pbRank7.Background = Brushes.SteelBlue;
+            _mainWindow.pbRank8.Background = Brushes.SteelBlue;
+            setStandardSkin("Benice");
+        }
+
+
+
         private void btnBaseSkin_Click(object sender, RoutedEventArgs e)
         {
             changeToBaseSkin();
@@ -242,7 +354,10 @@ namespace AutoChessOverlay.View
             changeToIceSkin();
         }
 
-       
+        private void btnBeniceSkin_Click(object sender, RoutedEventArgs e)
+        {
+            changeToBeniceSkin();
+        }
 
         private void btnHsSkin_Click(object sender, RoutedEventArgs e)
         {
