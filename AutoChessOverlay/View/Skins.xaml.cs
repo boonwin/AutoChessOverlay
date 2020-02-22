@@ -321,6 +321,7 @@ namespace AutoChessOverlay.View
             _mainWindow.tbMmrNowText.FontFamily = new FontFamily("Franklin Gothic Demi Cond");
             _mainWindow.tbMmrNowValueText.Foreground = Brushes.Black;
             _mainWindow.tbMmrNowValueText.FontFamily = new FontFamily("Franklin Gothic Demi Cond");
+ 
 
             _mainWindow.pbRank1.Foreground = Brushes.LightSkyBlue;
             _mainWindow.pbRank2.Foreground = Brushes.LightSkyBlue;
