@@ -49,6 +49,10 @@ namespace AutoChessOverlay
                 if (skin == "Hs") {
                     skins.changeToHsSkin();
                 }
+                if (skin == "Benice")
+                {
+                    skins.changeToBeniceSkin();
+                }
             }
             if (File.Exists(filePath.mmrPath))
             {
