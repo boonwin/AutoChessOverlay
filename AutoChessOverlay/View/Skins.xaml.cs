@@ -286,7 +286,8 @@ namespace AutoChessOverlay.View
         }
 
         internal void changeToBeniceSkin()
-        {
+        {          
+            
             _mainWindow.btRankTitle.Visibility = Visibility.Hidden;
             _mainWindow.img1st.Visibility = Visibility.Hidden;
             _mainWindow.img2nd.Visibility = Visibility.Hidden;

@@ -15,6 +15,8 @@ using System.Windows.Shapes;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Windows.Interop;
+using System.Windows.Threading;
+using System.Media;
 
 namespace AutoChessOverlay.View
 {
@@ -24,8 +26,9 @@ namespace AutoChessOverlay.View
     public partial class DataInput
     {
         private readonly MainWindow _mainWindow;
+        private DispatcherTimer dispatcherTimer;
         private string gameFilePath = null;
-
+        private string skinConfigPath = null;
         public DataInput(MainWindow mainWindow)
         {
          
@@ -35,6 +38,12 @@ namespace AutoChessOverlay.View
             var filePath = new FilePathes();
             DataContext = new HsBattlegroundsHeroes();
             gameFilePath = filePath.gameResultPath;
+            skinConfigPath = filePath.skinConfigPath;
+
+            //Create a timer with interval of 2 secs
+            dispatcherTimer = new DispatcherTimer();
+            dispatcherTimer.Tick += new EventHandler(dispatcherTimer_Tick);
+            dispatcherTimer.Interval = new TimeSpan(0, 0, 1);
         }
 
 
@@ -174,7 +183,22 @@ namespace AutoChessOverlay.View
                 tbRank8Amount.Text = setRanksPlusOne(tbRank8Amount.Text);
                 CreateRanksAndSetMainWindow();
                 saveRound("8th");
-            }
+                
+                if (File.Exists(skinConfigPath))
+                {
+                   
+                   var skin = File.ReadAllText(skinConfigPath);
+                   if (skin == "Benice")
+                    {
+                        //Things which happen before the timer starts
+                        _mainWindow.klinsi.Visibility = Visibility.Visible;
+                        //SoundPlayer mediaPlayer = new SoundPlayer(@"F:\Projekte\AutoChessOverlay\AutoChessOverlay\Skins\Benice\lache.wav");                       
+                        //mediaPlayer.Play();
+                        //Start the timer
+                        dispatcherTimer.Start();
+                    }
+                }
+            }                
         }
         private void btnr1plus1_MouseRightButtonUp(object sender, MouseButtonEventArgs e)
         {
@@ -386,6 +410,17 @@ namespace AutoChessOverlay.View
         private void cbAllMmrActive_Unchecked(object sender, RoutedEventArgs e)
         {
             _mainWindow.HideMMR();
+
+        }
+
+        private void dispatcherTimer_Tick(object sender, EventArgs e)
+        {
+            //Things which happen after 1 timer interval
+           
+            _mainWindow.klinsi.Visibility = System.Windows.Visibility.Collapsed;
+
+            //Disable the timer
+            dispatcherTimer.IsEnabled = false;
         }
     }
 }

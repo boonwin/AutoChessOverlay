@@ -19,6 +19,7 @@
                 <MenuItem Header="_Settings">
                     <MenuItem Header="_Reset Stats" Click="mnuResetStats_Click" />
                     <MenuItem Header="_Themes" Click="mnuThemes_Click" />
+                    <MenuItem Header="_Set HS Folder" />
                 </MenuItem>
                 <MenuItem Header="_Exit" Click="mnuExit_Click" />
 

@@ -37,7 +37,7 @@
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>19</ApplicationRevision>
+    <ApplicationRevision>21</ApplicationRevision>
     <ApplicationVersion>1.0.2.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -272,6 +272,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Skins\Benice\skin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Skins\Benice\klinsi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Skins\Benice\lache.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
