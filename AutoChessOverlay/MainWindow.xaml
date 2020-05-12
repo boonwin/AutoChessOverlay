@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
         xmlns:local="clr-namespace:AutoChessOverlay"
         mc:Ignorable="d"
         Title="MainWindow" Height="500" Width="300" ResizeMode="NoResize"  WindowStyle="None" MouseDown="Window_MouseDown">
@@ -110,7 +111,7 @@
 
         <Label x:Name="tbTotalGamesSmallText" Margin="170,276,97,0" Content="0 " HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Franklin Gothic Demi Cond" FontSize="16" FontWeight="Bold" Foreground="Black" Background="Transparent" Height="39" VerticalAlignment="Top" FontStyle="Italic" Visibility="Hidden" />
         <Image x:Name="klinsi" Source="Skins/Benice/klinsi.png" Visibility="Collapsed" />
-
+        <Image x:Name="beniceAnimated" gif:ImageBehavior.AnimatedSource="\Skins\Benice\FullTheme_Animted.gif" />
 
     </Grid>
 </Window>
