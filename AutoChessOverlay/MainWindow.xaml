@@ -54,8 +54,8 @@
         <Image x:Name="img6th" HorizontalAlignment="Left" Height="25" Margin="31,202,0,0" VerticalAlignment="Top" Width="50" Source="Skins/Base/6th.png"/>
         <Image x:Name="img7th" HorizontalAlignment="Left" Height="25" Margin="30,233,0,0" VerticalAlignment="Top" Width="50" Source="Skins/Base/7th.png"/>
         <Image x:Name="img8th" HorizontalAlignment="Left" Height="25" Margin="31,264,0,0" VerticalAlignment="Top" Width="50" Source="Skins/Base/8th.png"/>
-
-        <Image x:Name="imgBg" HorizontalAlignment="Left" Height="500" Width="300" VerticalAlignment="Top"  Visibility="Hidden" Source="Skins/Benice/FullTheme.png"/>
+        
+        <Image x:Name="imgBg" gif:ImageBehavior.AnimatedSource="Skins/Benice/FullTheme_Animted.gif" HorizontalAlignment="Left" Height="500" Width="300" VerticalAlignment="Top"  Visibility="Hidden" gif:ImageBehavior.AutoStart="false" />
 
         <Label x:Name="tbAvgRankText" Margin="10,326,10,0" Content="Average Rank: " HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Eras ITC" FontSize="24" FontWeight="Bold" Foreground="Yellow" Background="Transparent" Height="40" VerticalAlignment="Top">
             <Label.Effect>
@@ -111,7 +111,6 @@
 
         <Label x:Name="tbTotalGamesSmallText" Margin="170,276,97,0" Content="0 " HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Franklin Gothic Demi Cond" FontSize="16" FontWeight="Bold" Foreground="Black" Background="Transparent" Height="39" VerticalAlignment="Top" FontStyle="Italic" Visibility="Hidden" />
         <Image x:Name="klinsi" Source="Skins/Benice/klinsi.png" Visibility="Collapsed" />
-        <Image x:Name="beniceAnimated" gif:ImageBehavior.AnimatedSource="\Skins\Benice\FullTheme_Animted.gif" />
-
+    
     </Grid>
 </Window>

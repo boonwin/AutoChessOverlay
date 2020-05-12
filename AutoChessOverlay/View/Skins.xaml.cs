@@ -305,7 +305,7 @@ namespace AutoChessOverlay.View
             _mainWindow.tbTotalGamesSmallText.Visibility = Visibility.Visible;
 
 
-            _mainWindow.imgBg.Source = new BitmapImage(new Uri("pack://application:,,,/BoonwinsAutobattlerStreamOverlay;component/Skins/Benice/FullTheme.png"));
+            _mainWindow.imgBg.Source = new BitmapImage(new Uri("pack://application:,,,/BoonwinsAutobattlerStreamOverlay;component/Skins/Benice/FullTheme_Animted.gif"));
 
             _mainWindow.tbAvgRankSmallText.Foreground = Brushes.Black;
             _mainWindow.tbAvgRankSmallText.FontFamily = new FontFamily("Franklin Gothic Demi Cond");

@@ -17,6 +17,7 @@ using System.Runtime.InteropServices;
 using System.Windows.Interop;
 using System.Windows.Threading;
 using System.Media;
+using WpfAnimatedGif;
 
 namespace AutoChessOverlay.View
 {
@@ -27,6 +28,7 @@ namespace AutoChessOverlay.View
     {
         private readonly MainWindow _mainWindow;
         private DispatcherTimer dispatcherTimer;
+ 
         private string gameFilePath = null;
         private string skinConfigPath = null;
         public DataInput(MainWindow mainWindow)
@@ -44,6 +46,8 @@ namespace AutoChessOverlay.View
             dispatcherTimer = new DispatcherTimer();
             dispatcherTimer.Tick += new EventHandler(dispatcherTimer_Tick);
             dispatcherTimer.Interval = new TimeSpan(0, 0, 1);
+
+        
         }
 
 
@@ -89,6 +93,25 @@ namespace AutoChessOverlay.View
                 tbRank1Amount.Text = setRanksPlusOne(tbRank1Amount.Text);
                 CreateRanksAndSetMainWindow();
                 saveRound("1st");
+
+                if (File.Exists(skinConfigPath))
+                {
+
+                    var skin = File.ReadAllText(skinConfigPath);
+                    if (skin == "Benice")
+                    {
+                        //Things which happen before the timer starts
+                        var controller = ImageBehavior.GetAnimationController(_mainWindow.imgBg);
+                        if (controller.IsComplete == true)
+                        {
+                            controller.GotoFrame(0);
+                        }
+                        controller.Play();
+                        
+
+                    }
+                }
+
             }
         }
 
@@ -422,5 +445,7 @@ namespace AutoChessOverlay.View
             //Disable the timer
             dispatcherTimer.IsEnabled = false;
         }
+
+   
     }
 }
